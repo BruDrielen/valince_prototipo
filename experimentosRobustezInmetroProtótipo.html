@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <title>Experimentos Robustez Inmetro Protótipo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/experimentosRobustezInmetroProtótipo.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+
+</head>
+
+<body class="w3-light-grey">
+    <!-- ***** Header Area Start ***** -->
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" style="z-index: 1000;" data-wow-duration="0.75s"
+        data-wow-delay="0s">
+
+        <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Tutoriais</a></li>
+                <li><a href="#">Dúvidas</a></li>
+                <li><a href="#">Reprodutibilidade</a></li>
+                <li><a href="#">Bibliografia</a></li>
+                <li><a href="#">Cálculos</a></li>
+                <li><a href="#">Glossário</a></li>
+            </ul>
+            <div><a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+            </div>
+            <!-- ***** Menu End ***** -->
+        </nav>
+
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- Top container -->
+    <div class='topcontainer' style="z-index:2" style="margin-top: 0px;">
+        <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey "
+            onclick="w3_open();"><i class="fa fa-bars"></i> Menu Etapas</button>
+        <p>-</p>
+
+        <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey"
+            onclick="w3_openP();"><i class="fa fa-bars"></i> Menu Parâmetros</button>
+    </div>
+    <!-- ***** Header Area End ***** -->
+    <!-- Top container -->
+    <div class="topcontainer" style="z-index: 4; margin-top: 10px;">
+        <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey"
+            onclick="w3_open();"><i class="fa fa-bars"></i>Menu</button>
+    </div>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index: 998; width:300px; margin-top:-10px;"
+        id="mySidebar"><br>
+
+        <div class="APetapas">
+            <h5>Etapas da validação do método</h5>
+        </div>
+        <div class="w3-bar-block">
+            <a href="#" class="w3-bar-item w3-button w3-padding-10 w3-hide-large w3-blue w3-hover-black"
+            onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+
+            <a href="planejamentoVal_Parcial.html" class="w3-bar-item w3-button w3-padding"><b>Início do planejamento da
+                    validação</b></a>
+           
+            <p class="w3-bar-item w3-padding"><b>Pré-experimentos</b></p>
+            <a href="objetivoescopoInmetroProtótipo_Parcial.html" class="w3-bar-item w3-button w3-padding"
+                style="color: rgb(183, 185, 185);">1. Objetivo e escopo
+                do método <i><img src="assets/images/check.svg"
+                        style="width: 6%; margin-left: 10px; margin-bottom: 5px;"></i></a>
+            <a href="caractdesempenhoemateriais_Parcial.html" class="w3-bar-item w3-button w3-padding"
+                style="color: rgb(183, 185, 185);">
+                2. Características de desempenho e materiais <i><img src="assets/images/check.svg"
+                        style="width: 6%; margin-left: 10px; margin-bottom: 5px;"></i></a>
+            <p class="w3-bar-item w3-padding"><b>Planejamento experimental e experimentos</b></p>
+            <a href="inmetroPlanejAnáliseProtótipo.html" class="w3-bar-item w3-button w3-padding"
+                style="color: rgb(183, 185, 185);">3. Parâmetros de
+                desempenho e seus critérios (escolha do protocolo)<i><img src="assets/images/check.svg"
+                        style="width: 6%; margin-left: 10px; margin-bottom: 5px;"></i></a>
+            <a href="inmetroPlanejAnáliseProtótipo.html" class="w3-bar-item w3-button w3-padding  w3-green">
+                4. Planejamento de experimentos e critério para cada parâmetro (conforme protocolo) <i><img
+                        src="assets/images/Lupa_1.svg"
+                        style="width: 8%; margin-left: 10px; margin-bottom: 5px;"></i></a>
+            <p class="w3-bar-item w3-padding"><b> Análise crítica e conclusão </b></p>
+            <a href="inmetroPlanejAnáliseProtótipo.html" class="w3-bar-item w3-button w3-padding">
+                5. Análise e conclusão de cada parâmetro</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding" id="proibido6" onclick="proibidoSeguir();">
+                6. Conclusão e relatório da validação</a>
+                <hr>               
+            <a href="escolhaProtocolo_Parcial.html" class="w3-bar-item w3-button w3-padding">
+                <b>- Escolher outro protocolo</b></a>
+                <a href="validação.html" class="w3-bar-item w3-button w3-padding">
+                    <b>- Escolher outro Módulo</b></a>
+            <a href="http://www.inmetro.gov.br/credenciamento/organismos/doc_organismos.asp?tOrganismo=PEP&iacao=imprimir"
+            target="_blank" class="w3-bar-item w3-button w3-padding"> <b>- Site Inmetro</b>
+        </a>
+            <br><br>
+            <a href="#" class="w3-bar-item w3-button w3-padding"></a><br><br>
+        </div>
+    </nav>
+
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay">
+    </div>
+
+
+    <br>
+
+    <!-- !PAGE CONTENT! -->
+    <div id="main1" class="w3-main" style="margin-left:290px;margin-top:18px;margin-right:0px; width: auto;">
+
+
+        <div id='nav-parametros' class='nav_parametros'>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-blue w3-hover-black"
+                onclick="w3_closeP()" title="close menu"
+                style="margin-right: 30px; margin-top: 0px; margin-bottom: 0px; padding-right: 10px;"><i
+                    class="fa fa-remove fa-fw"></i>  Close Menu</a>
+            <ul>
+
+                <a href="linearidadeInmetroProtótipo.html" class="w3-bar-item w3-button w3-padding"><i
+                        class="fa fa-bullseye fa-fw"></i> 
+                    Linearidade / Sensibilidade</a>
+                <a href="seletividadeinmetroprotótipo.html" class="w3-button w3-padding"><i
+                        class="fa fa-bullseye fa-fw"></i>  Seletividade</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i> 
+                    Efeito Matriz</a>
+                <a href="LDLQ_InmetroProtótipo.html" class="w3-bar-item w3-button w3-padding"><i
+                        class="fa fa-bullseye fa-fw"></i>  Limite de
+                    detecção e Limite de quantificação</a>
+                <a href="tendenciaInmetroProtótipo.html" class="w3-bar-item w3-button w3-padding"><i
+                        class="fa fa-bullseye fa-fw"></i>  Tendência
+                    / recuperação</a>
+                <a href="precisãoInmetroProtótipo.html" class="w3-bar-item w3-button w3-padding"><i
+                        class="fa fa-bullseye fa-fw"></i> 
+                    Precisão</a>
+                <a href="robustezInmetroProtótipo.html" class="w3-bar-item w3-button w3-padding w3-green"><i
+                        class="fa fa-bullseye fa-fw"></i> 
+                    Robustez</a>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <p class="AP3"><b>Experimentos do estudo da Robustez<br></b> Protocolo: DOQ-CGCRE-008 - INMETRO
+                <br> Orientação sobre validação de métodos analíticos
+            </p>
+        </div>
+
+
+
+        <div>
+            <p class="AP4"> Instruções para experimentos da Robustez</p>
+        </div>
+
+        <div class="AP4">
+            <div class="AP6"><b>Tabela - </b>Instruções para experimentos da Robustez</div>
+            <br>
+
+            <br>
+        </div>
+        <br>
+
+       
+
+
+        <div class="w3-quarterD"><a href="analiseconclusãoRobustezCompletarRelatInmetroProtótipo.html">
+                <div class="w3-containerparametersC">
+                    <div class="w3-clear">
+                        <p>Prosseguir para:</p>
+                        <h4>Análise e conclusão da Robustez</h4>
+                        <div><i class="fa fa-arrow-right w3-xxxlarge"></i></div>
+                        <br>
+                        <p style="line-height: 1.7;"><b>*</b>Para esta etapa é necessário que os resultados dos experimentos da Robustez estejam em
+                            mãos!</p>
+                    </div>
+                </div>
+        </div></a>
+        
+<br><br><br>
+</div>
+<br>
+<hr>
+</body>
+    <footer style="margin-left: 300px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="about">
+                        <div class="logo">
+                            <img src="assets/images/logoValinceTutoriais.png" alt="Plot Listing">
+                        </div>
+                        <p>Tutuoriais orientativos<a rel="nofollow" href="https://templatemo.com/tm-564-plot-listing"
+                                target="_parent"> ValInce </a> te ajudando a extrair o melhor de você e seus métodos
+                            analíticos!
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="helpful-links">
+                        <h4>Links importantes</h4>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <ul>
+                                    <li><a href="#">Tutoriais</a></li>
+                                    <li><a href="#">Protocolos</a></li>
+                                    <li><a href="#">Orgãos reguladores</a></li>
+                                    <li><a href="#">Contato</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><a href="#">Sobre nós</a></li>
+                                    <li><a href="#">Prêmios</a></li>
+                                    <li><a href="#">Sites recomendados</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-us">
+                        <h4>Encontre-nos</h4>
+                        <p>IQSC - Universidade Estadual Paulista USP</p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="#">010-020-0340</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="#">090-080-0760</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="sub-footer">
+                        <p>Copyright © 2021 Plot Listing Co., Ltd. All Rights Reserved.
+                            <br>
+                            Design: <a rel="nofollow" href="https://templatemo.com" title="CSS Templates">TemplateMo</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+<script src="assets/js/tabelaexperimentosinmetro.js"></script>
+<script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+            overlayBg.style.display = "none";
+        } else {
+            mySidebar.style.display = 'block';
+            overlayBg.style.display = "block";
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+    }
+
+</script>
+
+<script>
+    // Get the Sidebar
+    var navparametros = document.getElementById("nav-parametros");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_openP() {
+        if (navparametros.style.display === 'block') {
+            navparametros.style.display = 'none';
+            overlayBg.style.display = "none";
+        } else {
+            navparametros.style.display = 'block';
+            overlayBg.style.display = "block";
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_closeP() {
+        navparametros.style.display = "none";
+        overlayBg.style.display = "none";
+    }
+
+</script>
+
+<script>
+    function proibidoSeguir() {
+        var confirmacao = confirm("Realize as etapas anteriores, seguindo a sequência recomendada!");
+
+        if (!confirmacao) {
+            event.preventDefault(); // Impede o comportamento padrão do link
+        }
+    }
+
+</script>
+
+
+
+</body>
+
+</html>

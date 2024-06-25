@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>Escolha do melhor protocolo de validação</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-plot-listing.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+
+  <!--
+
+TemplateMo 564 Plot Listing
+
+https://templatemo.com/tm-564-plot-listing
+
+-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
+
+<body>
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+  </div>
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav" style="color: white;">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo"></a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html">Bem-vindo(a)!</a></li>
+                        <li><a href="tutorialValidaçãoprotótipo.html">Tutorial Validação</a></li>
+                        <li><a href="#">Tutorial Incerteza</a></li>
+                        <li><a href="#">Bibliografia</a></li> 
+                        <li><a href="#">Glossário</a></li> 
+                    </ul>
+                    <a class="menu-trigger"><span>Menu</span></a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner" style="margin-top: 0%;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+    
+          
+            <h2 class="titulosA">3. Escolha do protocolo de validação mais adequado</h2>
+         
+          
+          <div class="AP4" style="width: 100%;padding: 15px;">
+            De acordo com as caracterísiticas do método serão disponibilizadas opções de protocolos de validação
+            para estabelecer condições de estudos dos parâmetros de desmepenho e critérios de aceitação de resultados.
+            <br><br>
+            <b>Desta forma, selecione as características abaixo que correspondem ao seu objetvo para que 
+              as opções de protocolos mais adequados sejam oferecidas. A seguir clique no ícone do protocolo escolhido.</b>
+          </div>
+
+          <div class="col-lg-12" style="width: 100%;padding: 10px;padding-top: 0%;">
+            <form id="search-form" name="gs" method="submit" role="search" action='#'>
+              <div class="row">
+                <div class="col-lg-3 align-self-center">
+                  <fieldset class="matriz">
+                    <label style="font-size: 14px;"><strong>Matriz</strong></label>
+                    <select id="matriz" class="form-select" aria-label="matriz" id="chooseCategory"
+                      onchange="propriedade()" style="text-decoration: wavy;"> 
+                      <option selected>...</option>
+                      <option value="alimento">Alimento</option>
+                      <option value="agua">Água</option>
+                      <option value="efluente">Efluente</option>
+                      <option value="ração">Ração</option>
+                      <option value="solo">Solo</option>
+                      <option value="pesticida">Pesticida/Agrotóxicos</option>
+                      <option value="farmaco">Fármaco/medicamento</option>
+                      <option value="sangue">Sangue</option>
+                      <option value="urina">Urina</option>
+                      <option value="saliva">Saliva</option>
+                      <option value="unha">Unha</option>
+                      <option value="cabelo">Cabelo</option>
+                      <option value="suor">Suor</option>
+                      <option value="mecônio">Mecônio</option>
+                      <option value="humor">Humor vítreo</option>
+                      <option value="oleo">Óleos e graxas</option>
+                      <option value="gasolina">Gasolina</option>
+                      <option value="gasolina">Petróleo</option>
+                      <option value="etanol">Etanol</option>
+                      <option value="metanol">Metanol</option>
+                      <option value="gás">Gás</option>
+                      <option value="vapor">Vapor</option>
+                      <option value="neblina">Neblina</option>
+                      <option value="fumaça">Fumaça</option>
+                      <option value="outra">Outra</option>
+                    </select>
+                  </fieldset>
+                </div>
+                <div class="col-lg-3 align-self-center">
+                  <label style="font-size: 14px;"><strong>Analito</strong></label>
+                  <fieldset class="analito">
+                    <select id="analito" class="form-select" aria-label="analito" id="chooseCategory"
+                      onchange="propriedade()">
+                      <option selected>...</option>
+                      <option value="pesticida">Pesticida/Agrotóxicos</option>
+                      <option value="farmaco">Fármaco/medicamento</option>
+                      <option value="oleo">Óleos e graxas</option>
+                      <option value="gasolina">Gasolina</option>
+                      <option value="gasolina">Petróleo</option>
+                      <option value="comporgânicos">Compostos orgânicos</option>
+                      <option value="compinorgânicos">Compostos inorgânicos</option>
+                      <option value="lipídeos">Lipídeo</option>
+                      <option value="proteina">Proteína</option>
+                      <option value="carboidrato">Carboidrato</option>
+                      <option value="aminoácido">Aminoácido</option>
+                      <option value="canabis">Canabis</option>
+                      <option value="cocaina">Cocaina</option>
+                      <option value="etanol">Etanol</option>
+                      <option value="outrasdrogas">Outras drogas</option>
+                      <option value="virus">Virus</option>
+                      <option value="bacteria">Bactéria</option>
+                      <option value="fungo">Fungo</option>
+                      <option value="outrosmetabolitos">Outros metabólitos</option>
+
+
+                    </select>
+                  </fieldset>
+                </div>
+                <div class="col-lg-3 align-self-center">
+                  <label style="font-size: 14px;"><strong>Objetivo analítico</strong></label>
+                  <fieldset class="metodo">
+                    <select id="metodo" class="form-select" aria-label="metodo" id="chooseCategory"
+                      onchange="propriedade()">
+                      <option selected>...</option>
+                      <option value="quantitativo">Quantificar (quantitativo)</option>
+                      <option value="qualitativo">Detecctar (qualitativo)</option>
+                    </select>
+                  </fieldset>
+                </div>
+
+                <div class="col-lg-3 align-self-center">
+                  <label style="font-size: 14px;"><strong>Localidade de aplicação</strong></label>
+                  <fieldset class="aplicação">
+                    <select id="aplicação" class="form-select" aria-label="aplicação" id="chooseCategory"
+                      onchange="propriedade()">
+                      <option selected>...</option>
+                      <option value="brasil">Brasil</option>
+                      <option value="mundial"> Mundial</option>
+                      <option value="americadosul">América do Sul</option>
+                      <option value="eua">Estados Unidos</option>
+                      <option value="americadonorte">América do Norte</option>
+                      <option value="europa">Europa</option>
+                      <option value="japão">Japão</option>
+                      <option value="china">China</option>
+                      <option value="rússia">Rússia</option>
+                      <option value="india">Índia</option>
+                      <option value="africa">África</option>
+                      <option value="autralia">Austrália</option>
+
+                    </select>
+                  </fieldset>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+        <fieldset>
+
+          <ul id="ul" class="categories" onchange="opçãoProtocolos()">
+            <li id="inmetro" style="display: none;"><a href='inmetroPlanejAnáliseProtótipo.html'><span class="icon"><img
+                    src="assets/images/icone_certificar.svg" alt="Home"></span>Inmetro</a></li>
+
+            <li id="anvisa166" class="categories" style="display: none;"><a href='anvisa166.html'><span
+                  class="icon"><img src="assets/images/icone_certificar.svg" alt="Home"></span>Anvisa166</a></li>
+
+            <li id="anvisa23" style="display: none;"><a href='anvisa23.html'><span class="icon"><img
+                    src="assets/images/icone_certificar.svg" alt="Home"></span>Anvisa23</a></li>
+
+            <li id="mapa" style="display: none;"><a href='mapa.html'><span class="icon"><img
+                    src="assets/images/icone_certificar.svg" alt="Home"></span> MAPA </a></li>
+
+            <li id="FDA" style="display: none;"><a href='fda.html'><span class="icon"><img
+                    src="assets/images/icone_certificar.svg" alt="Home"></span>FDA</a></li>
+
+            <li id="EMA" style="display: none;"><a href='ema.html'><span class="icon"><img
+                    src="assets/images/icone_certificar.svg" alt="Home"></span>EMA</a></li>
+
+            <li id="forense" style="display: none;"><a href='forense.html'><span class="icon"><img
+                    src="assets/images/icone_certificar.svg" alt="Home"></span>forense</a></li>
+
+
+
+        </fieldset>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="popular-categories">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Dúvidas Frequentes</h2>
+            <h6>Escolha o assunto abaixo</h6>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="menu">
+                    <div class="first-thumb active">
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/icone_validação1.svg" alt=""></span>
+                        Validação
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/icone_verificação1.svg" alt=""></span>
+                        Verificação
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/icone_incerteza1.svg" alt=""></span>
+                        Incerteza de medição
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/icone_parametrodedesempenho.svg" alt=""></span>
+                        Parâmetros de desempenho
+                      </div>
+                    </div>
+                    <div class="last-thumb">
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/icone_fontesdeincerteza.svg" alt=""></span>
+                        Fontes de incerteza
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-9 align-self-center">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>Evidências objetivas de que o método analítico faz o que diz fazer</h4>
+                                <p>Através de avaliações de parâmetros e testes estatísticos, é possível fornecer
+                                  evidências objetivas de que um determinado método está validado, ou seja, faz o que
+                                  diz fazer.</p>
+                                <div class="main-white-button"><a href="#"><i class="fa fa-eye"></i> Saber mais</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/1-1.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>Será que um método ainda está funcionando?</h4>
+                                <p>Mesmo depois da validação, pode ser necessário que um método seja vericado, ou seja,
+                                  que método passe por avaliação que confirme que o método analítico faz o que diz
+                                  fazer, também através do fornecimento de evidência objetiva.</p>
+                                <div class="main-white-button"><a href="#"><i class="fa fa-eye"></i> Entenda melhor</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/icon_validation01.png" alt="Foods on the table">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>O quanto um resultado é confiável?</h4>
+                                <p>Algumas vezes, não são corrigidos efeitos sistemáticos estimados, mas, em vez disso,
+                                  são incorporadas componentes (fontes) de incerteza de medição associadas. A incerteza
+                                  de medição geralmente engloba muitas componentes..</p>
+                                <div class="main-white-button"><a href="#"><i class="fa fa-eye"></i> Saiba mais</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/incerteza.jpg" alt="cars in the city">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>O que e como avaliar para obter evidências objetivas que um método faz o que diz
+                                  fazer?</h4>
+                                <p>
+                                  Por meio de testes estatísticos são avaliados parâmetros de desempenho do método, por
+                                  exemplo, precisão,
+                                  exatidão, linearidade, seletividade, efeito matriz, robustez, a própria incerteza de
+                                  medição e outros.
+                                </p>
+                                <div class="main-white-button"><a href="#"><i class="fa fa-eye"></i> Descubra mais</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/icon_verification02.png" alt="Shopping Girl">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>O que pode contribuir no resultado final de uma análise ou método analítico?</h4>
+                                <p>O resultado de uma medição carrega uma somatória de erros não controláveis pelo ser
+                                  humano,
+                                  que na metrologia chamam-se 'fontes' para incerteza de uma medição.</p>
+                                <div class="main-white-button"><a rel="nofollow" href="#"><i class="fa fa-eye"></i>
+                                    Entenda melhor</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/circle-5090539.jpg" alt="Traveling Beach">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="about">
+            <div class="logo">
+              <img src="assets/images/icon_verification03.png" alt="Plot Listing">
+            </div>
+            <p>Tutuoriais orientativos<a rel="nofollow" href="https://templatemo.com/tm-564-plot-listing"
+                target="_parent"> NOME DO SOFTWARE</a> te ajudando a extrair o melhor de você e seus métodos analíticos!
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="helpful-links">
+            <h4>Links importantes</h4>
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">
+                <ul>
+                  <li><a href="#">Tutoriais</a></li>
+                  <li><a href="#">Protocolos</a></li>
+                  <li><a href="#">Orgãos reguladores</a></li>
+                  <li><a href="#">Contato</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><a href="#">Sobre nós</a></li>
+                  <li><a href="#">Prêmios</a></li>
+                  <li><a href="#">Sites recomendados</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="contact-us">
+            <h4>Encontre-nos</h4>
+            <p>IQSC - Universidade Estadual Paulista USP</p>
+            <div class="row">
+              <div class="col-lg-6">
+                <a href="#">010-020-0340</a>
+              </div>
+              <div class="col-lg-6">
+                <a href="#">090-080-0760</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="sub-footer">
+            <p>Copyright © 2021 Plot Listing Co., Ltd. All Rights Reserved.
+              <br>
+              Design: <a rel="nofollow" href="https://templatemo.com" title="CSS Templates">TemplateMo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Scripts -->
+
+  <script src="assets/js/pdfteste.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/opcaoprotocolo.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <title>Tutorial para Validação de Métodos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-plot-listing.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--
+
+TemplateMo 564 Plot Listing
+
+https://templatemo.com/tm-564-plot-listing
+
+-->
+
+
+</head>
+
+<body>
+
+      <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  <!-- ***** Preloader End ***** -->
+</div>
+  <!-- ***** Header Area Start ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav" style="color: white;">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo"></a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html">Bem-vindo(a)!</a></li>
+                            <li><a href="tutorialValidaçãoprotótipo.html" class="active">Tutorial Validação</a></li>
+                            <li><a href="#">Tutorial Incerteza</a></li>
+                            <li><a href="#">Bibliografia</a></li> 
+                            <li><a href="#">Glossário</a></li> 
+                        </ul>
+                        <a class="menu-trigger"><span>Menu</span></a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:0px;">
+
+        <!-- Header -->
+        <div class="fundoFigura" style="width: 100%;">
+
+            <div class="main-banner" style="padding-top: 75px;padding-bottom: 5px;width: 100%;">
+                <div class="container" style="width: 100%;">
+                    <div class="row" style="width: 100%;">
+                        
+                            <div class="top-text header-text" style="width: 100%;">
+                                <h2 class="titulosA" style="margin: 20px;width: 100%;font-size: 40px;"><br>Tutorial para Validação de Métodos Analíticos</h2>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; justify-content: center;margin: auto;">
+                            <div class="AP4" style="background-color:#cce6fc; width: 80%; 
+                            font-size: 14px; font-weight: 500;
+                            margin-right: 5px;padding: 10px;">
+                            Para proporcionar melhor entendimento, é proposta uma sequência de trabalho 
+                            resumida em 3 fases:<br>
+                            <b>pré-experimentos, planejamento e experimentos,
+                                    análise e conclusão.</b></p>
+                        </div>
+                    
+                    <div class="AP4" style="background-color:#cce6fc; width: 80%; 
+                            font-size: 14px; font-weight: 500; margin: auto;
+                            margin-left: 5px;padding: 10px;">
+                        <b>Dentro de cada fase, estão discriminadas as etapas da validação.</b><br>
+                        Em cada etapa, você poderá obter uma breve explicação sobre e clicar para seguir com orientações
+                        para a respectiva etapa.
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="AP6" style="margin: auto;width: 100%;font-size: 24px;"><b>Etapas da Validação de Métodos</b>
+        </div>
+        <div style="background-color:#031629; color: white; display: flex; justify-content: center;">
+            <div class="w3-bar" style="display: flex; flex-wrap: wrap; justify-content: space-around; width: 80%;">
+                <button class="w3-bar-item w3-button w3-display-container" onclick="openCity('London')" style="flex-basis: 30%; max-width: 300px;">
+                    Fase A <br>
+                    <b>Pré-experimentos</b>
+                </button>
+                <button class="w3-bar-item w3-button w3-display-container" onclick="openCity('Paris')" style="flex-basis: 30%; max-width: 300px;">
+                    Fase B <br>
+                    <b>Planejamento e experimentos</b>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <button class="w3-bar-item w3-button w3-display-container" onclick="openCity('Tokyo')" style="flex-basis: 30%; max-width: 300px;">
+                    Fase C <br>
+                    <b>Análise e conclusão</b>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+        </div>
+        
+
+
+        <div class="testeEtapas">
+            <div id="London" class="city" style="display:none">
+                <h2 style="font-size: 24px;"><b>Pré-experimentos</b></h2>
+
+                <a href="objetivoescopoInmetroProtótipo_Parcial.html">
+                    <button class="botãoEtapas">
+                        <p class="w3-tooltip">
+                            <b><span class="circle">1</span> 
+                                Definir objetivo e escopo do método</b> 
+                            <span class="w3-text">- <em> Definições iniciais sobre o uso e aplicação pretendidos
+                                    do método como qual analito em qual matriz, com qual método de detecção,
+                                    quantificação, separação, qual o público ou área alvo de uso e aplicação, etc.
+                                    <br><span class="hoverable"><b>Clique para seguir</b></span>
+                                </em></span>
+                        </p>
+                    </button></a>
+
+                <br>
+
+                <a href="caractdesempenhoemateriais_Parcial.html">
+                    <button class="botãoEtapas">
+                        <p class="w3-tooltip">
+                            <b><span class="circle">2</span> Verificar características prévias de equipamentos e
+                                insumos
+                            </b><span class="w3-text">- <em>Verificar se as características de desempenho dos
+                                    equipamentos
+                                    estão compatíveis com o exigido pelo método em estudo e qualificar os materiais,
+                                    por exemplo, padrões e reagentes.
+                                    <br><span class="hoverable"><b>Clique para seguir</b></span>
+                                </em></span>
+                        </p>
+                    </button></a>
+
+            </div>
+
+            <div id="Paris" class="city" style="display:none">
+                <h2><b>Planejamento e experimentos</b></h2>
+                <a href="escolhaProtocolo_Parcial.html">
+                    <button class="botãoEtapas">
+                        <p class="w3-tooltip">
+                            <b><span class="circle">3</span> Escolher um protocolo ou guia de validação
+                            </b><span class="w3-text">- <em> Escolher um protocolo ou guia de validação
+                                    adequado ao escopo e objetivo do método, para definir os parâmetros e critérios,
+                                    planejar experimentos e avaliação estatística, e assim realizar a análise crítica
+                                    evidenciando se o método é adequado ao uso e objetivo pretendido.
+                                    <br><span class="hoverable"><b>Clique para seguir</b></span>
+                                </em></span>
+                        </p>
+                    </button></a>
+
+                <br>
+
+                <a href="escolhaProtocolo_Parcial.html">
+                    <button class="botãoEtapas">
+                        <p class="w3-tooltip">
+                            <b><span class="circle">4</span> Definir os parâmetros e critérios
+                            </b><span class="w3-text">- <em> Definir os parâmetros de desempenho e
+                                    seus respectivos critérios de aceitação de resultados, conforme recomendação do
+                                    protocolo ou guia escolhido.
+                                    <br><span class="hoverable"><b>Clique para seguir</b></span></em></span>
+                        </p>
+                    </button></a>
+
+                <br>
+
+
+                <a href="escolhaProtocolo_Parcial.html">
+                    <button class="botãoEtapas">
+                        <p class="w3-tooltip">
+                            <b><span class="circle">5</span> Planejar dos experimentos e das avaliações
+                                estatísticas
+                            </b><span class="w3-text">- <em> Planejar os experimentos de validação,
+                                    incluindo o tratamento estatístico a ser utilizado e realizar os
+                                    experimentos, conforme recomendação do protocolo ou guia escolhido.
+                                    <br><span class="hoverable"><b>Clique para seguir</b></span>
+                                </em></span>
+                        </p>
+                    </button></a>
+
+                <br>
+
+                <a href="#">
+                    <button class="botãoEtapas">
+                        <p class="w3-tooltip">
+                            <b><span class="circle">6</span> Realizar os experimentos
+                            </b><br><span class="w3-text">- <em> Etapa de aplicação do planejamento
+                                    ‘em bancada’.
+                                    <br><span class="hoverable"><b>Clique para seguir</b></span>
+                                </em></span>
+                        </p>
+                    </button></a>
+
+            </div>
+
+            <div id="Tokyo" class="city" style="display:none">
+                <h2><b>Análise e conclusão</b></h2>
+                <a href="escolhaProtocolo_Parcial.html">
+                    <button class="botãoEtapas">
+                        <p class="w3-tooltip">
+                            <b><span class="circle">7</span> Realizar a avaliação crítica de cada parâmetro
+                            </b><span class="w3-text">- <em> Realizar a avaliação crítica dos resultados obtidos de
+                                    cada
+                                    parâmetro de desempenho, considerando os critérios de aceitação conforme
+                                    protocolo ou guia
+                                    escolhido e concluir o estudo do parâmetro, interpretando o que parâmetro indica
+                                    em relação a
+                                    evidenciar se o método é adequado ao uso pretendido ou não.
+                                    <br><span class="hoverable"><b>Clique para seguir</b></span>
+                                </em></span>
+                        </p>
+                    </button></a>
+                <br>
+
+                <a href="escolhaProtocolo_Parcial.html">
+                    <button class="botãoEtapas">
+                        <p class="w3-tooltip">
+                            <b><span class="circle">8</span> Realizar a análise crítica total da validação
+                            </b><span class="w3-text">- <em> Realizar uma análise crítica final, juntando as
+                                    conclusões
+                                    obtidas de cada avaliação de cada de desempenho considerando os critérios de
+                                    aceitação
+                                    conforme protocolo ou guia escolhido e concluir se o método é adequado ao uso
+                                    pretendido.
+                                    <br><span class="hoverable"><b>Clique para seguir</b></span>
+                                </em></span>
+                        </p>
+                    </button></a>
+
+                <br>
+
+                <a href="escolhaProtocolo_Parcial.html">
+                    <button class="botãoEtapas">
+                        <p class="w3-tooltip">
+                            <b><span class="circle">9</span> Relatório da validação
+                            </b><span class="w3-text" style="width: 98%;">- <em> Discriminar, resumidamente, as características que cada
+                                    parâmetro de desempenho informou sobre o método, registrando as evidências de
+                                    que o método
+                                    é ou não adequado ao uso pretendido.
+                                    <br><span class="hoverable"><b>Clique para seguir</b></span>
+                                </em></span>
+                        </p>
+                    </button></a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="w3-panel">
+        <div class="w3-row-padding">
+
+
+            <!-- ***** 
+        <img src="assets/images/etapas_validaçãoMétodosMontesserat.png" alt="etapasValidaçãoMétodos" 
+        style="width: 100%;display: inline-block;border-radius: 15px;margin-bottom: 20px;">
+ 
+
+            <div class="AP2" style="width: 20%; margin-right: 50%; margin-left: 40%;text-align: center;">
+                <a href="tutorialValidaçãoprotótipo.html"
+                    style="color: rgb(7, 7, 7);font-size: 18px;width: 30%;">Prosseguir
+                    >>></a>
+            </div>***** -->
+
+            <!-- ***** 
+        <span class="AP4">
+
+          <div class="AP2">
+            <span style="font-size: 24px;"><b>Etapas da validação de métodos</b></span>
+          </div>
+          <div class="AP2">
+            <span><b>Pré-experimentos</b></span>
+          </div>
+
+          <table class="w3-table w3-striped w3-white">
+            <tr>
+
+              <td><b>1.</b> Definir objetivo e escopo do método</td>
+              <td></td>
+            </tr>
+            <tr>
+
+              <td><b>2.</b> Verificar se as características de desempenho dos
+                  equipamentos estão
+                  compatíveis com o exigido pelo método em estudo e qualificar os materiais, por exemplo, padrões e
+                  reagentes</td>
+              <td></td>
+            </tr>
+          </table>
+
+          <div class="AP2">
+            <span><b>Planejamento experimental e experimentos</b></span>
+          </div>
+
+          <table class="w3-table w3-striped w3-white">
+
+            <tr>
+
+              <td><b>3.</b> Definir os parâmetros de desempenho e seus respectivos
+                  critérios de aceitação de resultados, com base em protocolos e guias de validação adequado ao
+                  objetivo e escopo do método.</td>
+              <td></i></td>
+            </tr>
+
+
+            <td><b>4.</b> Planejar os experimentos de validação, incluindo o tratamento
+                estatístico a ser utilizado e realizar os experimentos seguindo requisitos do
+                protocolo mais adequado escolhido.</td>
+            <td></td>
+            </tr>
+
+          </table>
+
+          <div class="AP2">
+            <span><b>Análise e conclusão</b></span>
+          </div>
+
+          <table class="w3-table w3-striped w3-white">
+
+            <tr>
+              <td><b>5.</b> Realizar a análise crítica dos resultados obtidos de cada
+                  parâmetro de desempenho considerando os critérios de aceitação e concluir se o parâmetro atende os
+                  critérios para demonstrar se o método é adequado ao uso pretendido</td>
+            </tr>
+            <tr>
+              <td><b>6.</b> Realizar a análise crítica final, juntando todas
+                  as conclusões obtidas de cada avaliação em cada de desempenho considerando os critérios de aceitação e
+                  concluir se o método é adequado ao uso pretendido.</td>
+            </tr>
+            <tr>
+              <td><b>7.</b> Relatório de validação</td>
+              <td></td>
+            </tr>
+          </table>          
+      </div>
+    </div>
+  </div>
+  <hr>
+  </table>
+   ***** -->
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+    
+    <hr>
+
+    <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="about">
+            <div class="logo">
+              <a href="index.html"><img src="assets/images/logoValinceTutoriais.png"></a>
+            </div>
+            <p>Tutoriais<a rel="nofollow" href="https://templatemo.com/tm-564-plot-listing" target="_parent">
+               ValInce </a> te ajudando a extrair o melhor de você e seus métodos analíticos!
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="helpful-links">
+            <h4>Links importantes</h4>
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">
+                <ul>
+                  <li><a href="#">Tutoriais</a></li>
+                  <li><a href="#">Protocolos</a></li>
+                  <li><a href="#">Orgãos reguladores</a></li>
+                  <li><a href="#">Contato</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><a href="#">Sobre nós</a></li>
+                  <li><a href="#">Prêmios</a></li>
+                  <li><a href="#">Sites recomendados</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="contact-us">
+            <h4>Encontre-nos</h4>
+            <p>RQA Labs<br>IQSC - Instituto de Química de São Carlos<br>Universidade de São Paulo - USP</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="sub-footer">
+            <p>Copyright © 2021 Plot Listing Co., Ltd. All Rights Reserved.
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- End page content -->
+    </div>
+
+
+
+    <script>
+
+
+
+
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
+
+    <script>
+        function openCity(cityName) {
+            // Alternância de cidade
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(cityName).style.display = "block";
+
+            // Adiciona a classe 'selected' ao botão clicado
+            var buttons = document.getElementsByClassName("w3-bar-item");
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove("selected");
+            }
+            event.target.classList.add("selected");
+            // Aqui você pode adicionar a lógica para abrir a cidade correspondente
+            console.log("Abrir cidade:", cityName);
+        }
+    </script>
+
+   <!-- Scripts -->
+
+  <script src="assets/js/pdfteste.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuTrigger = document.querySelector('.menu-trigger');
+    const nav = document.querySelector('.nav');
+
+    menuTrigger.addEventListener('click', function() {
+        this.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+});
+    </script>
+
+</body>
+</html>

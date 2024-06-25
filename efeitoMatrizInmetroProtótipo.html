@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <title>Efeito Matriz Inmetro Protótipo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/efeitoMatrizInmetroProtótipo.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+    <!--
+
+TemplateMo 564 Plot Listing
+
+https://templatemo.com/tm-564-plot-listing
+
+-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+</head>
+
+<body class="w3-light-grey">
+    <!-- ***** Header Area Start ***** -->
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" style="z-index: 1000;" data-wow-duration="0.75s"
+        data-wow-delay="0s">
+
+        <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Tutoriais</a></li>
+                <li><a href="#">Dúvidas</a></li>
+                <li><a href="#">Reprodutibilidade</a></li>
+                <li><a href="#">Bibliografia</a></li>
+                <li><a href="#">Cálculos</a></li>
+                <li><a href="#">Glossário</a></li>
+            </ul>
+            <div><a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+            </div>
+            <!-- ***** Menu End ***** -->
+        </nav>
+
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- Top container -->
+    <div class="topcontainer" style="z-index: index 4; margin-top: 10px;">
+        <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey"
+            onclick="w3_open();"><i class="fa fa-bars"></i>Menu</button>
+    </div>
+
+    <!-- Top container -->
+    <div class='topcontainer' style="z-index:4">
+        <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey "
+            onclick="w3_open();"><i class="fa fa-bars"></i> Menu Etapas</button>
+        <p>-</p>
+
+        <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey"
+            onclick="w3_openP();"><i class="fa fa-bars"></i> Menu Parâmetros</button>
+
+        <button href="#" class="w3-bar-item w3-button w3-padding-5w3-hide-large w3- w3-black hover-black"
+            onclick="w3_closeP()" title="close menu"
+            style="margin-right: 30px; margin-top: 0px; margin-bottom: 0px; padding-right: 10px;"><i
+                class="fa fa-remove fa-fw"></i>  Close Menu</button>
+
+        <!-- ***** ERRO RESPONSIVO DE MENU ***** -->
+
+
+        <!-- Sidebar/menu -->
+        <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" id="mySidebar"
+            style="z-index: 998; width:300px; margin-top:-40px;"><br>
+            <div class="APetapas">
+                <h5>Etapas da validação do método</h5>
+            </div>
+            <div class="w3-bar-block">
+                <a href="#" class="w3-bar-item w3-button w3-padding-10 w3-hide-large w3-blue w3-hover-black"
+                    onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+
+                <a href="planejamentoVal_Parcial.html" class="w3-bar-item w3-button w3-padding"><b>Início do
+                        planejamento da
+                        validação</b></a>
+
+                <p class="w3-bar-item w3-padding"><b>Pré-experimentos</b></p>
+                <a href="objetivoescopoInmetroProtótipo_Parcial.html" class="w3-bar-item w3-button w3-padding"
+                    style="color: rgb(183, 185, 185);">1. Objetivo e escopo
+                    do método <i><img src="assets/images/check.svg"
+                            style="width: 6%; margin-left: 10px; margin-bottom: 5px;"></i></a>
+                <a href="caractdesempenhoemateriais_Parcial.html" class="w3-bar-item w3-button w3-padding"
+                    style="color: rgb(183, 185, 185);">
+                    2. Características de desempenho e materiais <i><img src="assets/images/check.svg"
+                            style="width: 6%; margin-left: 10px; margin-bottom: 5px;"></i></a>
+                <p class="w3-bar-item w3-padding"><b>Planejamento experimental e experimentos</b></p>
+                <a href="inmetroPlanejAnáliseProtótipo.html" class="w3-bar-item w3-button w3-padding"
+                    style="color: rgb(183, 185, 185);">3. Parâmetros de
+                    desempenho e seus critérios (escolha do protocolo)<i><img src="assets/images/check.svg"
+                            style="width: 6%; margin-left: 10px; margin-bottom: 5px;"></i></a>
+                <a href="inmetroPlanejAnáliseProtótipo.html" class="w3-bar-item w3-button w3-padding  w3-green">
+                    4. Planejamento de experimentos e critério para cada parâmetro (conforme protocolo) <i><img
+                            src="assets/images/Lupa_1.svg"
+                            style="width: 8%; margin-left: 10px; margin-bottom: 5px;"></i></a>
+                <p class="w3-bar-item w3-padding"><b> Análise crítica e conclusão </b></p>
+                <a href="inmetroPlanejAnáliseProtótipo.html" class="w3-bar-item w3-button w3-padding">
+                    5. Análise e conclusão de cada parâmetro</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding" id="proibido6" onclick="proibidoSeguir();">
+                    6. Conclusão e relatório da validação</a>
+                <hr>
+                <a href="escolhaProtocolo_Parcial.html" class="w3-bar-item w3-button w3-padding">
+                    <b>- Escolher outro protocolo</b></a>
+                <a href="validação.html" class="w3-bar-item w3-button w3-padding">
+                    <b>- Escolher outro Módulo</b></a>
+                <a href="http://www.inmetro.gov.br/credenciamento/organismos/doc_organismos.asp?tOrganismo=PEP&iacao=imprimir"
+                    target="_blank" class="w3-bar-item w3-button w3-padding"> <b>- Site Inmetro</b>
+                </a>
+                <br><br>
+                <a href="#" class="w3-bar-item w3-button w3-padding"></a><br><br>
+            </div>
+        </nav>
+
+
+
+
+        <!-- !PAGE CONTENT! -->
+        <div id="main1" class="w3-main" style="margin-left:290px;margin-top:18px;">
+
+            <div id='nav-parametros' class='nav_parametros' style="z-index: 1000;margin-top:20px;">
+
+                <ul>
+                    <a href="linearidadeInmetroProtótipo.html" class="w3-bar-item w3-button w3-padding"><i
+                            class="fa fa-bullseye fa-fw"></i> 
+                        Linearidade / Sensibilidade</a>
+                    <a href="seletividadeinmetroprotótipo.html" class="w3-button w3-padding"><i
+                            class="fa fa-bullseye fa-fw"></i>  Seletividade</a>
+                    <a href="efeitoMatrizInmetroProtótipo.html"
+                        class="w3-bar-item w3-button w3-padding  w3-hover-black w3-green"><i
+                            class="fa fa-bullseye fa-fw"></i> 
+                        Efeito Matriz</a>
+                    <a href="LDLQ_InmetroProtótipo.html" class="w3-bar-item w3-button w3-padding"><i
+                            class="fa fa-bullseye fa-fw"></i>  Limite de
+                        detecção e Limite de quantificação</a>
+                    <a href="tendenciaInmetroProtótipo.html" class="w3-bar-item w3-button w3-padding"><i
+                            class="fa fa-bullseye fa-fw"></i>  Tendência
+                        / recuperação</a>
+                    <a href="precisãoInmetroProtótipo.html" class="w3-bar-item w3-button w3-padding"><i
+                            class="fa fa-bullseye fa-fw"></i> 
+                        Precisão</a>
+                    <a href="robustezInmetroProtótipo.html" class="w3-bar-item w3-button w3-padding"><i
+                            class="fa fa-bullseye fa-fw"></i> 
+                        Robustez</a>
+                </ul>
+            </div>
+            <br>
+            <!-- Header -->
+            <div>
+                <p class="AP3" style="margin-left: 60px; margin-top:130px;"><b>Estudo do Efeito Matriz<br></b>
+                    Protocolo:
+                    DOQ-CGCRE-008 - INMETRO
+                    <br> Orientação sobre validação de métodos analíticos
+                </p>
+            </div>
+
+
+
+            <div class="AP6" style="margin-left: 40px; margin-right: 15px;"><b> Efeito Matriz</b>
+                <br>A matriz da amostra pode conter componentes que interferem no desempenho da medição. Esses
+                interferentes
+                podem aumentar ou reduzir o sinal, comprometendo o resultado. Adicionalmente, a magnitude desse efeito
+                também pode depender da concentração. Logo, no estudo de seletividade é necessário verificar também a
+                existência de <b>efeito de matriz</b>.
+            </div>
+
+
+            <div class="w3-panel">
+                <div class="w3-row-padding">
+
+                    <div class='AP3' style="margin-left: 15px; text-align-last: left;"><b>Tabela -</b> Planejamento e
+                        critérios de aceitação para o estudo do Efeito Matriz</div>
+                    <div class="minha-tabela-container">
+                        <table id='tabela_A'>
+                            <thead class="cabecalho">
+
+                                <tr class="AP6">
+
+                                    <th> O que fazer</th>
+                                    <th> Como fazer</th>
+                                    <th> O que avaliar</th>
+                                    <th> Como avaliar</th>
+                                    <th> Cálculos</th>
+                                    <th> Critérios</th>
+
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td class="AP8">-</td>
+                                <td class="AP8">-</td>
+                                <td class="AP8">-</td>
+                                <td class="AP8">-</td>
+                                <td class="AP8">-</td>
+                                <td class="AP8">-</td>
+                            </tr>
+
+
+                        </table>
+
+
+
+                    </div>
+                    <br>
+                    <div style="margin-left:0px;margin-top:5px;border-radius:15px;display:center; text-align: center;">
+                        <button id='btn_impA' class="btn_imp w3-hover-black">Imprimir Tabela</button>
+                    </div>
+
+
+
+                    <div class="w3-quarterD"><a href="experimentos_EM_InmetroProtótipo.html">
+                            <div class="w3-containerparametersC">
+                                <div class="w3-clear">
+                                    <p>Prosseguir para:</p>
+                                    <h4>Experimentos do Efeito Matriz</h4>
+                                    <p>Mãos a obra!</p>
+                                    <div><i class="fa fa-arrow-right w3-xxxlarge"></i></div>
+                                </div>
+
+
+                            </div>
+                    </div></a>
+
+                    <div class="w3-quarterD"><a href="analiseconclusao_EM_InmetroPrototipo.html">
+                        <div class="w3-containerparametersC">
+                            <div class="w3-clear">
+                                <p>Prosseguir para:</p>
+                                <h4>Análise e conclusão do Efeito Matriz</h4>
+                                <div><i class="fa fa-arrow-right w3-xxxlarge"></i></div>
+                                <p>*Para esta etapa é necessário que os resultados dos experimentos de Efeito Matriz estejam
+                                    em mãos!</p>
+                            </div>
+    
+    
+                        </div>
+                </div></a>
+
+
+                </div>
+            </div>
+
+
+
+            <hr>
+            <br>
+            <!-- Footer -->
+            <footer style="margin-left:40px;margin-top:0px;padding:0px;display:center; text-align: center;">
+                <h4>ValInce</h4>
+                <p>Todos os direitos reservados</p>
+            </footer>
+
+            <!-- End page content -->
+        </div>
+
+        <script>
+            // Get the Sidebar
+            var mySidebar = document.getElementById("mySidebar");
+
+            // Get the DIV with overlay effect
+            var overlayBg = document.getElementById("myOverlay");
+
+            // Toggle between showing and hiding the sidebar, and add overlay effect
+            function w3_open() {
+                if (mySidebar.style.display === 'block') {
+                    mySidebar.style.display = 'none';
+                    overlayBg.style.display = "none";
+                } else {
+                    mySidebar.style.display = 'block';
+                    overlayBg.style.display = "block";
+                }
+            }
+
+            // Close the sidebar with the close button
+            function w3_close() {
+                mySidebar.style.display = "none";
+                overlayBg.style.display = "none";
+            }
+
+        </script>
+        <script src="assets/js/tabelalinearidadeinmetro.js"></script>
+
+        <script>
+            function proibidoSeguir() {
+                var confirmacao = confirm("Realize as etapas anteriores, seguindo a sequência recomendada!");
+    
+                if (!confirmacao) {
+                    event.preventDefault(); // Impede o comportamento padrão do link
+                }
+            }
+    
+        </script>
+
+</body>
+
+</html>

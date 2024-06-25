@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <title>Linearidade Inmetro Protótipo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/linearidadeInmetroProtótipo.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Montserrat", sans-serif;
+        }
+    </style>
+
+
+    <!--
+
+TemplateMo 564 Plot Listing
+
+https://templatemo.com/tm-564-plot-listing
+
+-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="assets/css/linearidadeInmetroProtótipo.css">
+
+
+</head>
+
+
+<body class="w3-light-grey">
+    <!-- ***** Header Area Start ***** -->
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" style="z-index: 999; margin-bottom: 0px;"
+        data-wow-duration="0.75s" data-wow-delay="0s">
+
+        <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+                <li><a href="index.html">Bem-vindo(a)!</a></li>
+                <li><a href="tutorialValidaçãoprotótipo.html">Tutorial Validação</a></li>
+                <li><a href="#">Tutorial Incerteza</a></li>
+                <li><a href="#">Bibliografia</a></li>
+                <li><a href="#">Glossário</a></li>
+            </ul>
+            <div><a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+            </div>
+            <!-- ***** Menu End ***** -->
+        </nav>
+
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- Top container -->
+    <div class="topcontainer" style="z-index: index 4; margin-top: 10px;">
+        <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey"
+            onclick="w3_open();"><i class="fa fa-bars"></i>Menu</button>
+    </div>
+
+    <!-- Top container -->
+    <div class='topcontainer' style="z-index:4">
+        <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey "
+            onclick="w3_open();"><i class="fa fa-bars"></i> Menu Etapas</button>
+        <p>-</p>
+
+        <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey"
+            onclick="w3_openP();"><i class="fa fa-bars"></i> Menu Parâmetros</button>
+
+        <button href="#" class="w3-bar-item w3-button w3-padding-5w3-hide-large w3- w3-black hover-black"
+            onclick="w3_closeP()" title="close menu"
+            style="margin-right: 30px; margin-top: 0px; margin-bottom: 0px; padding-right: 10px;"><i
+                class="fa fa-remove fa-fw"></i>  Close Menu</button>
+
+        <!-- ***** ERRO RESPONSIVO DE MENU ***** -->
+
+    </div>
+    <!-- ***** Header Area End ***** -->
+
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;" id="mySidebar">
+
+
+        <div class="AP6" style="border-radius: 0px;width: 100%;margin: 0px;">
+            <h5 style="font-weight: 600;"><b>Etapas da validação</b></h5>
+        </div>
+        <div class="w3-bar-block">
+
+            <a href="etapasValidaçãoBUTTON.html" class="w3-bar-item w3-button w3-padding"
+                style="font-size: 18px;text-align: center;border-radius: 0px;">
+                <b>Início das etapas</b></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-large w3-blue w3-hover-black" onclick="w3_close()"
+                title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+            <p class="w3-bar-item w3-padding" style="line-height: 1.1; background-color:#043563;color: white;">
+                <b>Fase A - Pré-experimentos</b>
+            </p>
+            <table>
+                <tr>
+                    <td><b>
+                            <p class="circle">1</p>
+                        </b></td>
+                    <td><a href="objetivoescopoInmetroProtótipo_Parcial.html" class="w3-bar-item w3-button"
+                            style="line-height: 1.3;margin-left: 0px;border-radius: 10px; padding-right: 0px;
+                            color: rgba(128, 128, 128, 0.534);">
+                            Objetivo e escopo do método<img src="assets/images/check.svg"></a></td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td><b>
+                            <p class="circle">2</p>
+                        </b></td>
+                    <td><a href="caractdesempenhoemateriais_Parcial.html" class="w3-bar-item w3-button w3-padding"
+                            style="line-height: 1.3;margin-left: 0px;border-radius: 10px; color: rgba(128, 128, 128, 0.534);">
+                            Características de equipamentos e materiais<img src="assets/images/check.svg"></a></td>
+                </tr>
+            </table>
+
+            <p class="w3-bar-item w3-padding" style="line-height: 1.3;background-color:#043563;color: white;">
+                <b>Fase B - Planejamento e experimentos</b>
+            </p>
+
+
+            <table>
+                <tr>
+                    <td><b>
+                            <p class="circle">3</p>
+                        </b></td>
+                    <td><a href="escolhaProtocolo_Parcial.html" class="w3-bar-item w3-button w3-padding"
+                            style="line-height: 1.3;margin-left: 0px;border-radius: 10px; color: rgba(128, 128, 128, 0.534);">
+                            Escolha do protocolo<img src="assets/images/check.svg"></a></td>
+                </tr>
+            </table>
+
+
+            <table>
+                <tr>
+                    <td><b>
+                            <p class="circle">4</p>
+                        </b></td>
+                    <td><a href="inmetroPlanejAnáliseProtótipo.html" class="w3-bar-item w3-button w3-padding w3-green"
+                            style="line-height: 1.3;margin-left: 0px;border-radius: 10px;">
+                            Parâmetros de desempenho e seus critérios <img src="assets/images/Lupa_1.svg"
+                                style="width: 6%; margin-left: 8px;margin-bottom: auto;"></a></td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td><b>
+                            <p class="circle">5</p>
+                        </b></td>
+                    <td><a href="inmetroPlanejAnáliseProtótipo.html" class="w3-bar-item w3-button w3-padding"
+                            style="line-height: 1.3;margin-left: 0px;border-radius: 10px;">
+                            Planejamento dos experimentos e das avaliações estatísticas </a></td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td><b>
+                            <p class="circle">6</p>
+                        </b></td>
+                    <td><a href="#" class="w3-bar-item w3-button w3-padding"
+                            style="line-height: 1.3;margin-left: 0px;border-radius: 10px;">
+                            Aplicação do planejamento e experimentos em bancada</a></td>
+                </tr>
+            </table>
+
+
+            <p class="w3-bar-item w3-padding" style="line-height: 1.2;background-color:#043563;color: white;">
+                <b> Fase C - Análise crítica e conclusão </b>
+            </p>
+
+            <table>
+                <tr>
+                    <td><b>
+                            <p class="circle">7</p>
+                        </b></td>
+                    <td><a href="inmetroPlanejAnáliseProtótipo.html" class="w3-bar-item w3-button w3-padding"
+                            style="line-height: 1.3;margin-left: 0px;border-radius: 10px;" id="proibido5"
+                            onclick="proibidoSeguir();">
+                            Análise e conclusão de cada parâmetro</a></td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td><b>
+                            <p class="circle">8</p>
+                        </b></td>
+                    <td><a href="relatórioFinalCompletar_InmetroProtótipo.html" class="w3-bar-item w3-button w3-padding"
+                            style="line-height: 1.3;margin-left: 0px;border-radius: 10px;" id="proibido6"
+                            onclick="proibidoSeguir();">
+                            Análise e conclusão da Validação</a></td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td><b>
+                            <p class="circle">9</p>
+                        </b></td>
+                    <td><a href="relatórioFinalCompletar_InmetroProtótipo.html" class="w3-bar-item w3-button w3-padding"
+                            style="line-height: 1.3;margin-left: 0px;border-radius: 10px;" id="proibido6"
+                            onclick="proibidoSeguir();">
+                            Relatório da validação</a></td>
+                </tr>
+            </table>
+            <br>
+        </div>
+
+    </nav>
+
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay">
+    </div>
+
+
+    <br>
+
+    <!-- !PAGE CONTENT! -->
+    <div id="main1" class="w3-main" style="margin-left:290px;margin-top:0px;">
+
+        <div id='nav-parametros' class='nav_parametros' style="z-index: 1000;margin-top:15px;">
+
+            <ul>
+
+                <a href="linearidadeInmetroProtótipo.html"
+                    class="w3-bar-item w3-button w3-padding w3-hover-black w3-green"><i
+                        class="fa fa-bullseye fa-fw"></i> 
+                    Linearidade / Sensibilidade</a>
+                <a href="seletividadeinmetroprotótipo.html" class="w3-button w3-padding"><i
+                        class="fa fa-bullseye fa-fw"></i>  Seletividade</a>
+                <a href="efeitoMatrizInmetroProtótipo.html" class="w3-bar-item w3-button w3-padding"><i
+                        class="fa fa-bullseye fa-fw"></i> 
+                    Efeito Matriz</a>
+                <a href="LDLQ_InmetroProtótipo.html" class="w3-bar-item w3-button w3-padding"><i
+                        class="fa fa-bullseye fa-fw"></i>  Limite de
+                    detecção e Limite de quantificação</a>
+                <a href="tendenciaInmetroProtótipo.html" class="w3-bar-item w3-button w3-padding"><i
+                        class="fa fa-bullseye fa-fw"></i>  Tendência
+                    / recuperação</a>
+                <a href="precisãoInmetroProtótipo.html" class="w3-bar-item w3-button w3-padding"><i
+                        class="fa fa-bullseye fa-fw"></i> 
+                    Precisão</a>
+                <a href="robustezInmetroProtótipo.html" class="w3-bar-item w3-button w3-padding"><i
+                        class="fa fa-bullseye fa-fw"></i> 
+                    Robustez</a>
+            </ul>
+
+        </div>
+
+
+        <div class="AP33">
+            <b>Visão geral para o estudo da
+                <br><span style="font-size: 32px;text-transform: uppercase;">Linearidade</span><br></b>
+            <span style="font-size: 16px;"> Protocolo: DOQ-CGCRE-008 - INMETRO</span>
+            <br>
+            <span style="font-size: 14px;">Orientação sobre validação de métodos analíticos</span>
+            <br>
+        </div>
+
+
+
+        <div class="AP6" style="margin-left: 40px; margin-right: 15px;font-weight: 450;"><b>Linearidade</b> de um
+            procedimento analítico
+            é a sua habilidade (dentro de uma dada faixa) em obter resultados os quais são diretamente proporcionais à
+            concentração do analito na amostra (ICH, 2005).
+        </div>
+
+        <div class="AP6" style="margin-left: 40px; margin-right: 15px;font-weight: 450;">
+            Leia a <b>Tabela A</b> abaixo, que agrupa os requisitos em relação ao estudo de <b>Linearidade</b>
+            dispostos no protocolo de validação escolhido
+            com o objetivo de oferecer uma <b>visão geral de todo o processo</b> do estudo,
+            relacionando planejamento, experimentos e critérios para avaliação.<br>
+            Portanto, <sapn style="text-transform:uppercase ;"><b>não se assuste</b></sapn> com a quantidade de
+            informações, mas é importante que você
+            leia e entenda as relações na tabela para prosseguir com as etapas.
+            <br>
+        </div>
+
+
+        <div class="w3-panel">
+            <div class="w3-row-padding">
+
+                <h5 class='AP3' style="margin-left: 15px; text-align-last: left;">
+                    <strong>Tabela A: Visão geral do planejamento e critérios de aceitação para o estudo da
+                        Linearidade</strong>
+                </h5>
+                <div class="minha-tabela-container">
+                    <table id='tabela_A'>
+                        <thead class="cabecalho">
+
+                            <tr class="AP6">
+
+                                <th> O que fazer</th>
+                                <th> Como fazer</th>
+                                <th> O que avaliar</th>
+                                <th> Como avaliar</th>
+                                <th> Cálculos</th>
+                                <th> Critérios</th>
+
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td class="AP8">Selecionar a faixa linear de trabalho a partir de uma faixa de trabalho</td>
+                            <td class="AP8">1. Escolha no mínimo 5 níveis de concentração uniformemente distribuídos
+                                que pretende avaliar, com uma replicata por nível, para construir a curva analítica
+                                ;<br><br>
+                                2. Construa a curva utilizando o branco (ou com o branco da amostra) nos níveis de
+                                concentração escolhidos.<br><br>
+                                3. Identifique inicialmente, por observação visual, a faixa linear aproximada
+                                e os limites superior e inferior da faixa de trabalho
+                                com adição das concentrações variadas.</td>
+                            <td class="AP8"> Existe uma faixa em que o gráfico se mantém linear, entre as concetrações
+                                escolhidas.</i></td>
+                            <td class="AP8">Através da plotagem de um gráfico que mostre a relação entre a resposta
+                                medida e a concentração do analito visualmente.
+                                <span> <a href="assets/images/Gráfico_Linearidade_Faixa linear.jpg" target="_blank">
+                                        <img src="assets/images/Gráfico_Linearidade_Faixa linear.jpg">Ver imagem</a>
+                                </span>
+                            </td>
+                            <td class="AP8"> y = a + bx (consultar protocolo DOQ-CGCR-008 para cálculo)</td>
+                            <td class="AP8">Deve haver uma propoção linear entre x e y (reta) em algum local da faixa.
+                                O método é mais sensível quando pequenas variações de concentração resultam em maior
+                                variação na resposta, ou seja, maior inclinação (b).</td>
+
+                        </tr>
+                        <tr class="AP6">
+
+                            <th> O que fazer</th>
+                            <th> Como fazer</th>
+                            <th> O que avaliar</th>
+                            <th> Como avaliar</th>
+                            <th> Cálculos</th>
+                            <th> Critérios</th>
+
+                        </tr>
+                        <tr>
+                            <td class="AP8">Confirmar a linearidade na faixa de trabalho selecionada
+                            </td>
+                            <td class="AP8">1. A partir da faixa linear encontrada anteriormente, preparar
+                                uma curva analítica com no mínimo 5 níveis concentrações diferentes e uniformemente
+                                distribuídos
+                                de modo independente e não alíquotas da mesma solução mãe.
+                                Utilize 3 replicatas para cada nível de concentração.<br><br>
+                                2. Para plotar o gráfico, colocar no eixo x as concentrações do analito e no eixo do y
+                                as respostas das medições.</td>
+                            <td class="AP8">A habilidade (dentro da faixa escolhida) em obter resultados os quais
+                                são diretamente proporcionais à concentração do analito na amostra.<br>
+                            </td>
+                            <td class="AP8">1. Verificação da homocedasticidade, isto é, homogeneidade da variância dos
+                                resíduos,
+                                para avaliar qual o melhor modelo de regressão a ser utilizado;<br>
+                                <br>
+                                2. Aplicar a regressão linear adequada e calcular o coeficiente de correlação,
+                                para avaliar o grau de correlação entre as variáveis da curva construída, e calcular o
+                                coeficiente de determinação (r²) para avaliar a proporção de variabilidade nas
+                                respostas;<br><br>
+                                3. Cálcular a equação da reta que relaciona as duas variáveis e avaliar como as
+                                concentrações e as respostas obtidas pela análise se relacionam;<br><br>
+                                4. Deve-se também avaliar a linearidade por meio do
+                                teste F (também conhecido como F-Snedecor) na análise da variância (ANOVA) da regressão,
+                                para avaliar se realmente há variação significativa da resposta do método em decorrência
+                                da variação da
+                                concentração.<br><br>
+                                5. Verificar da ausência de valores estatisticamente aberrantes; <br><br>
+                                6. Com base na estimativa dos resíduos, construir um gráfico de resíduos por meio dos
+                                valores absolutos e relativos da diferença entre o valor experimental e o valor
+                                teórico, obtido por meio de da respectiva equação da regressão linear e avaliar se
+                                existe tendência de resíduos.
+                                <br><br>
+
+                            </td>
+
+                            <td class="AP8">
+                                1. Testes de Cochran (MILLER; MILLER, 2010);<br><br>
+                                2. Coeficiente de correlação (r) (THOMPSON; PHILIP J, 2011)
+                                Coeficiente de determinação (r²)(THOMPSON; PHILIP J, 2011);
+                                Quanto mais próximo de 1 (r) estiver, maior o grau de correlação entre as variáveis
+                                da curva.
+                                Da mesma forma, quanto mais próximo de 1 (r²) estiver, maior proporção de variabilidade
+                                nas respostas.
+                                <br><br>
+                                3. y = a + bx (consultar protocolo DOQ-CGCR-008 para cálculo).
+                                O método é mais sensível quando pequenas variações de concentração resultam em maior
+                                variação na resposta, ou seja, maior inclinação (b).
+                                <br><br>
+                                4. Teste F (também conhecido como F-Snedecor) na análise da variância (ANOVA) da
+                                regressão. Se o teste F (Snedecor) for significativo, Y efetivamente varia em função de
+                                X.<br><br>
+                                5. Teste de Grubbs (ISO 5725-3,1994, ISO 5725-2, 1994, LEITE, F.
+                                Validação em análise química. 5. ed. Campinas: Átomo, 2008.);
+                                <br><br>
+                                6. Construir um gráfico de resíduos por meio dos valores absolutos e relativos da
+                                diferença entre o valor experimental e o valor
+                                teórico, obtido por meio de da respectiva equação da regressão linear e avaliar se
+                                existe tendência de resíduos. Deve ser observado se há tendência comportamento dos
+                                resíduos.
+                                <br> A distribuição aleatória em torno da linha reta confirma a linearidade.
+                                Tendências sistemáticas (estimativa do erro de medição que, em medições repetidas,
+                                permanece constante ou varia de maneira previsível) indicam a não linearidade
+                                (visualmente, o gráfico tende a se parecer com uma 'corneta'). Caso se observe alguma
+                                tendência no gráfico de resíduos, pode haver indício de que o modelo linear seja
+                                inadequado. (EURACHEM, 2017; INSTITUTO NACIONAL DE METROLOGIA (BRASIL), 2012a;
+                                KONIECZKA; NAMIESNIK, 2018; SKOOG, 2014)
+                                <br><br>
+
+                                </i>
+                            </td>
+                            <td class="AP8">
+                                1. Se o sistema for homocedástico, calcular a equação da regressão linear simples usando
+                                o método dos mínimos quadrados ordinários (MMQO). Caso seja heterocedástico,
+                                calcular a equação da regressão linear simples usando o método dos
+                                mínimos quadrados ordinários ponderados (MMQP).<br><br>
+                                2. Como o protocolo não estipula um valor, recomendamos que (r) deve estar entre 0.999
+                                e 1.000. E que (r²) entre 0.998 e 1.000
+                                <br><br>
+                                3. Pequenas variações de concentração devem resultar em maior
+                                variação na resposta, ou seja, maior inclinação (b).<br><br>
+                                4. Y deve efetivamente variar em função de X.<br><br>
+                                5. Valores aberrantes devem estar ausentes;<br><br>
+                                6. Não devem haver tendências de resíduos.<br><br>
+
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+                <br>
+                <div style="margin-left:0px;margin-top:5px;border-radius:15px;display:center; text-align: center;">
+                    <button id='btn_impA' class="btn_imp w3-hover-black"
+                        style="padding: 10px; border-radius: 15px;">Imprimir Tabela</button>
+                </div>
+
+
+
+                <div style="display: flex; justify-content: space-between;">
+
+                    <div class="w3-quarterD">
+                        <a href="experimentosLinearidadeInmetroProtótipo.html" style="display: inline-block;">
+                            <div class="w3-containerparametersC" style="line-height: 1,0;">
+                                <div class="w3-clear">
+                                    <p style="font-weight: 500;font-size: 14px;margin-top: 20px;">
+                                        Para planejar os experimentos, prossiga para:</p>
+                                    <br>
+                                    <h4>Experimentos da Linearidade</h4>
+                                    <br>
+                                    <div><i class="fa fa-arrow-right w3-xxxlarge"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="w3-quarterD">
+                        <a href="analiseconclusaoLinearidadeInmetroPrototipo-LAPTOP-40M4RE7T.html"
+                            style="display: inline-block;">
+                            <div class="w3-containerparametersC">
+                                <div class="w3-clear">
+                                    <p style="font-weight: 500;line-height: 1.3;margin-top: 20px;">
+                                        Para verificar ou analisar resultados, <br>prossiga para:</p>
+                                    <br>
+                                    <h4>Análise e conclusão da Linearidade</h4>
+                                    <br>
+                                    <div><i class="fa fa-arrow-right w3-xxxlarge"></i></div>
+                                    <p style=" font-weight: 500;line-height: 1.3;;margin-top: 20px;">*Para esta etapa é
+                                        necessário que os resultados dos experimentos de Linearidade estejam em mãos!
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+
+                <hr>
+                <br>
+                <!-- Footer -->
+                <footer style="margin-left:40px;margin-top:0px;padding:0px;display:center; text-align: center;">
+                    <h4>ValInce</h4>
+                    <p>Todos os direitos reservados</p>
+                </footer>
+
+                <!-- End page content -->
+            </div>
+
+            <script>
+                // Get the Sidebar
+                var mySidebar = document.getElementById("mySidebar");
+
+                // Get the DIV with overlay effect
+                var overlayBg = document.getElementById("myOverlay");
+
+                // Toggle between showing and hiding the sidebar, and add overlay effect
+                function w3_open() {
+                    if (mySidebar.style.display === 'block') {
+                        mySidebar.style.display = 'none';
+                        overlayBg.style.display = "none";
+                    } else {
+                        mySidebar.style.display = 'block';
+                        overlayBg.style.display = "block";
+                    }
+                }
+
+                // Close the sidebar with the close button
+                function w3_close() {
+                    mySidebar.style.display = "none";
+                    overlayBg.style.display = "none";
+                }
+
+            </script>
+
+            <script>
+                // Get the Sidebar
+                var navparametros = document.getElementById("nav-parametros");
+
+                // Get the DIV with overlay effect
+                var overlayBg = document.getElementById("myOverlay");
+
+                // Toggle between showing and hiding the sidebar, and add overlay effect
+                function w3_openP() {
+                    if (navparametros.style.display === 'block') {
+                        navparametros.style.display = 'none';
+                        overlayBg.style.display = "none";
+                    } else {
+                        navparametros.style.display = 'block';
+                        overlayBg.style.display = "block";
+                    }
+                }
+
+                // Close the sidebar with the close button
+                function w3_closeP() {
+                    navparametros.style.display = "none";
+                    overlayBg.style.display = "none";
+                }
+
+            </script>
+
+            <script>
+                function proibidoSeguir() {
+                    var confirmacao = confirm("Realize as etapas anteriores, seguindo a sequência recomendada!");
+
+                    if (!confirmacao) {
+                        event.preventDefault(); // Impede o comportamento padrão do link
+                    }
+                }
+
+            </script>
+
+            <script src="assets/js/tabelalinearidadeinmetro.js"></script>
+
+</body>
+
+</html>
