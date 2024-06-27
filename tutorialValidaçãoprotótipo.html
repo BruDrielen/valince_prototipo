@@ -34,6 +34,45 @@ https://templatemo.com/tm-564-plot-listing
         integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <style>
+  .containerGPT {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%; /* Largura total por padrão */
+    max-width: 100%; /* Largura máxima será 100% */
+    margin: 0 auto; /* Centraliza o contêiner na tela */
+  }
+
+  .image-containerGPT {
+    width: 100%; /* Largura total por padrão */
+    max-width: 100%; /* Largura máxima será 100% */
+    text-align: center; /* Centraliza o conteúdo */
+  }
+
+  .image-containerGPT img {
+    border-radius: 20px;
+    max-width: 100%; /* Ajusta a largura máxima da imagem para preencher o contêiner */
+    height: auto; /* Mantém a proporção da altura */
+    display: block; /* Remove espaços extras ao redor da imagem */
+  }
+
+  @media (min-width: 768px) {
+    .containerGPT {
+      width: 80%; /* Define a largura do contêiner como 60% da largura da tela */
+    }
+
+    .image-containerGPT {
+      width: 60%; /* Define a largura do contêiner da imagem como 60% da largura da tela */
+      margin: 0 auto; /* Centraliza o contêiner da imagem na tela */
+    }
+  }
+
+       
+        .text-containerGPT {
+            width: 100%;
+        }
+    </style>
 
 </head>
 
@@ -65,11 +104,14 @@ https://templatemo.com/tm-564-plot-listing
                             <li><a href="index.html">Bem-vindo(a)!</a></li>
                             <li><a href="tutorialValidaçãoprotótipo.html" class="active">Tutorial Validação</a></li>
                             <li><a href="#">Tutorial Incerteza</a></li>
-                            <li><a href="#">Bibliografia</a></li> 
-                            <li><a href="#">Glossário</a></li> 
-                          </ul> 
+                            <li><a href="#">Bibliografia</a></li>
+                            <li><a href="#">Glossário</a></li>
+                        </ul>
                         <a class='menu-trigger'>
-                            <span>Menu</span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </a>
                         <!-- ***** Menu End ***** -->
                     </nav>
@@ -93,93 +135,37 @@ https://templatemo.com/tm-564-plot-listing
                 <p style="line-height: 1.5;font-size: 16px;font-weight: 500;margin: 10px;">
                     <b>O Tutorial para Validação de Métodos</b>
                     tem como objetivo guiar o usuário nas etapas da validação, oferecendo informações sobre critérios de
-                    planejamento  de experimentos, aceitação de resultados e avaliação de parâmetros de desempenho,
+                    planejamento de experimentos, aceitação de resultados e avaliação de parâmetros de desempenho,
                     seguindo protocolos de órgãos reguladores mais adequados de acordo com o objetivo e escopo
-                    do método em estudo.</p>
+                    do método em estudo.
+                </p>
             </div>
         </div>
     </div>
 
     <div style="background-color:  rgb(1, 13, 22);">
-            <div class="AP5" style="font-weight: 700;Font-size: 20px;margin-bottom: 1cap;">
-                O Tutorial de Validação pode te auxiliar com os seguintes objetivos:
-            </div>
-      
+        <div class="AP5" style="font-weight: 700;Font-size: 20px;margin-bottom: 1cap;">
+            O Tutorial de Validação pode te auxiliar com os seguintes objetivos:
+        </div>
+
 
         <div class="containerGPT">
             <div class="image-containerGPT">
-              <img src="assets/images/objetivosValidação.png" alt="objetivosTutorial" style="border-radius: 20px;">
+                <img src="assets/images/objetivosValidação.png" alt="objetivosTutorial" style="border-radius: 20px;">
             </div>
-          
+<br>
+
             <div class="text-containerGPT">
-              <p class="AP5" style="line-height: 1.5; font-weight: 700; color: rgb(11, 47, 77);">
-                Descubra como o Tutorial de Validação pode ser a chave para alcançar esses objetivos!
-              </p>
-
-              <a href="etapasValidaçãoBUTTON.html"><button class="buttonGPT"><i class="fa fa-arrow-right w3-xxxlarge"></i></button></a>
+                <p class="AP5" style="line-height: 1.5; font-weight: 700; color: rgb(11, 47, 77);">
+                    Descubra como o Tutorial de Validação pode ser a chave para alcançar esses objetivos!
+                </p>
+                <a href="etapasValidaçãoBUTTON.html"><button class="buttonGPT"><i
+                            class="fa fa-arrow-right w3-xxxlarge"></i></button></a>
             </div>
         </div>
-        </div>
-    <!-- ***** 
-            <panel>
-                <table id='tabela_A'>
-                    <thead class="cabecalho">
-
-                        <tr class="AP6">
-                            <th> QUAL SEU OBJETIVO?</th>
-                            <th> RECOMENDAÇÕES</th>
-                            <th> COMO PROSSEGUIR?</th>
-                        </tr>
-                    </thead>
-                    <tr>
-                        <td><b>OBJETIVO A</b><br> <b>Planejar os experimentos</b> de <b>TODOS</b> os parâmetros de
-                            desempenho da
-                            validação, realizar os experimentos de <b>TODOS</b> os parâmetros, obter os <b>TODOS</b>
-                            resultados e analisar
-                            todos os dados de uma vez.</td>
-                        <td><b>RECOMENDAÇÃO OBJETIVO A:</b><br> Se você está no início do desenvolvimento do método ou
-                            ainda irá começar a estudar seu desempenho, e prefere realizar toda parte experimental
-                            antes de analisar os dados, é indicado que você faça o planejamento inteiro antes.</td>
-                        <td><b>ROTA OBJETIVO A: </b><br> Se você pretende planejar toda parte experimental,
-                            comece pelo primeiro parâmetro sugerido, e sempre escolha seguir para o planejamento do
-                            próximo
-                            parâmetro de desmepenho.</td>
-
-                    </tr>
-
-                    <tr>
-                        <td><b>OBJETIVO B</b><BR> Planejar os experimentos, realizar os ensaios, obter resultados e
-                            analisar os dados
-                            de CADA parâmetro de desempenho da validação POR VEZ.
-                        </td>
-                        <td><b>RECOMENDAÇÃO OBJETIVO B:</b><br> Se você preferir entender primeiramente
-                            as características de UM PARÂMETRO antes de estudar os outros recomendados, por exemplo,
-                            você prefere verificar se o método possui linearidade adequada antes de saber se é seletivo,
-                            esse
-                            é o processo recomendado para você.</td>
-                        <td><b>ROTA OBJETIVO B: </b><br> Se você pretende estudar um parâmetro por vez,
-                            comece pelo primeiro parâmetro sugerido, faça o planejamento, e após realizar os ensaios
-                            e sempre escolha seguir para a análise dos dados do respectivo parâmetro de desmepenho.
-                            Após analisar os dados e concluir, você poderá seguir para o próximo.</td>
-                    </tr>
-                    <tr>
-                        <td><b>OBJETIVO C</b><BR> Analisar os dados de dos parâmetro de desempenho da validação,
-                            uma vez que você já possui os resultados dos ensaios.</td>
-                        <td><b> RECOMENDAÇÃO OBJETIVO C: </b><br>Este módulo é indicado se você
-                            <b>dados experimentais de todos os parâmetros</b> recomedados pelo protocolo adequado
-                            objetivo do método.
-                        </td>
-                        <td><b>ROTA OBJETIVO C: </b><br> Se você pretende avaliar os seus resultados,
-                            comece pelo primeiro parâmetro sugerido, não precisa preencher
-                            ou fazer nada na parte de planejamento e sempre escolha seguir para a análise dos dados do
-                            respectivo parâmetro de desmepenho. Preencha as informações requeridas.
-                    </tr>
-
-                </table>
-            </panel>***** -->
 
 
-    <br>
+        <br>
 
     </div>
     </div>
@@ -242,7 +228,7 @@ https://templatemo.com/tm-564-plot-listing
                                 </div>
                                 <div class="col-lg-9 align-self-center">
                                     <ul class="nacc">
-                                        <li class="active">
+                                        <li>
                                             <div>
                                                 <div class="thumb">
                                                     <div class="row">
@@ -403,10 +389,11 @@ https://templatemo.com/tm-564-plot-listing
             <div class="col-lg-4">
                 <div class="about">
                     <div class="logo">
-                        <img src="assets/images/icon_verification03.png" alt="Plot Listing">
+                        <img src="assets/images/logoValinceTutoriais.png" alt="Plot Listing">
                     </div>
+                    <br>
                     <p>Tutuoriais orientativos<a rel="nofollow" href="https://templatemo.com/tm-564-plot-listing"
-                            target="_parent"> NOME DO SOFTWARE</a> te ajudando a extrair o melhor de você e seus
+                            target="_parent"> ValInce</a> te ajudando a extrair o melhor de você e seus
                         métodos analíticos!
                 </div>
             </div>
