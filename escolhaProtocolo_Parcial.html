@@ -34,6 +34,70 @@ https://templatemo.com/tm-564-plot-listing
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
+
+  <style>
+    .categories {
+      margin: 0px;
+      list-style: none;
+      padding: 0px;
+      display: flex;
+      justify-content: center;
+      gap: 1px;
+      /* Espaçamento entre os itens */
+    }
+
+    .categories li {
+      display: flex;
+      margin: 0px;
+      padding: 0px;
+      flex-direction:column;
+      align-items: center;
+      font-size: 16px;
+      margin: 10px;
+      min-width: 250px;
+      /* Aumenta a largura mínima */
+      max-width: 300px;
+      /* Aumenta a largura máxima opcional */
+      gap: 5px;
+    }
+
+    .categories a {
+      display: flex;
+      margin: 0px;
+      padding: 0px;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      width: 100%;
+      min-width: 250px;
+      /* Aumenta a largura mínima */
+      max-width: 300px;
+      /* Aumenta a largura máxima opcional */
+    }
+
+    .categories a p {
+      color: white;
+      margin: 0px;
+      padding: 3px 0 0 0;
+      word-wrap: break-word;
+      line-height: 1.5;
+      text-shadow: 2px 1px rgba(0, 0, 0, 0.76);
+      font-weight: 500;
+      text-align: center;
+      width: 100%;
+      /* Ajuste a largura para 100% do contêiner pai */
+    }
+
+
+    .categories img {
+      max-width: 50px;
+      /* Ajuste o tamanho da imagem conforme necessário */
+      margin-bottom: 5px;
+      height: auto;
+    }
+  </style>
+
+
 </head>
 
 <body>
@@ -52,44 +116,45 @@ https://templatemo.com/tm-564-plot-listing
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav" style="color: white;">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo"></a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        <li><a href="index.html">Bem-vindo(a)!</a></li>
-                        <li><a href="tutorialValidaçãoprotótipo.html">Tutorial Validação</a></li>
-                        <li><a href="#">Tutorial Incerteza</a></li>
-                        <li><a href="#">Bibliografia</a></li> 
-                        <li><a href="#">Glossário</a></li> 
-                    </ul>
-                    <a class="menu-trigger"><span>Menu</span></a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav" style="color: white;">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo"></a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li><a href="index.html">Bem-vindo(a)!</a></li>
+              <li><a href="tutorialValidaçãoprotótipo.html">Tutorial Validação</a></li>
+              <li><a href="#">Tutorial Incerteza</a></li>
+              <li><a href="#">Bibliografia</a></li>
+              <li><a href="#">Glossário</a></li>
+            </ul>
+            <a class="menu-trigger"><span>Menu</span></a>
+            <!-- ***** Menu End ***** -->
+          </nav>
         </div>
+      </div>
     </div>
-</header>
+  </header>
   <!-- ***** Header Area End ***** -->
 
   <div class="main-banner" style="margin-top: 0%;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-    
-          
-            <h2 class="titulosA">3. Escolha do protocolo de validação mais adequado</h2>
-         
-          
+
+
+          <h2 class="titulosA">3. Escolha do protocolo de validação mais adequado</h2>
+
+
           <div class="AP4" style="width: 100%;padding: 15px;">
             De acordo com as caracterísiticas do método serão disponibilizadas opções de protocolos de validação
             para estabelecer condições de estudos dos parâmetros de desmepenho e critérios de aceitação de resultados.
             <br><br>
-            <b>Desta forma, selecione as características abaixo que correspondem ao seu objetvo para que 
-              as opções de protocolos mais adequados sejam oferecidas. A seguir clique no ícone do protocolo escolhido.</b>
+            <b>Desta forma, selecione as características abaixo que correspondem ao seu objetvo para que
+              as opções de protocolos mais adequados sejam oferecidas. A seguir clique no ícone do protocolo
+              escolhido.</b>
           </div>
 
           <div class="col-lg-12" style="width: 100%;padding: 10px;padding-top: 0%;">
@@ -99,7 +164,7 @@ https://templatemo.com/tm-564-plot-listing
                   <fieldset class="matriz">
                     <label style="font-size: 14px;"><strong>Matriz</strong></label>
                     <select id="matriz" class="form-select" aria-label="matriz" id="chooseCategory"
-                      onchange="propriedade()" style="text-decoration: wavy;"> 
+                      onchange="propriedade()" style="text-decoration: wavy;">
                       <option selected>...</option>
                       <option value="alimento">Alimento</option>
                       <option value="agua">Água</option>
@@ -108,6 +173,7 @@ https://templatemo.com/tm-564-plot-listing
                       <option value="solo">Solo</option>
                       <option value="pesticida">Pesticida/Agrotóxicos</option>
                       <option value="farmaco">Fármaco/medicamento</option>
+                      <option value="medvet">Medicamento veterinário</option>
                       <option value="sangue">Sangue</option>
                       <option value="urina">Urina</option>
                       <option value="saliva">Saliva</option>
@@ -122,9 +188,7 @@ https://templatemo.com/tm-564-plot-listing
                       <option value="etanol">Etanol</option>
                       <option value="metanol">Metanol</option>
                       <option value="gás">Gás</option>
-                      <option value="vapor">Vapor</option>
-                      <option value="neblina">Neblina</option>
-                      <option value="fumaça">Fumaça</option>
+                      <option value="superficie">Superfícies não biológicas</option>
                       <option value="outra">Outra</option>
                     </select>
                   </fieldset>
@@ -137,22 +201,18 @@ https://templatemo.com/tm-564-plot-listing
                       <option selected>...</option>
                       <option value="pesticida">Pesticida/Agrotóxicos</option>
                       <option value="farmaco">Fármaco/medicamento</option>
+                      <option value="medvet">Medicamento veterinário</option>
+                      <option value="droga">Drogas ilícitas</option>
+                      <option value="outrasdrogas">Outras drogas</option>
                       <option value="oleo">Óleos e graxas</option>
                       <option value="gasolina">Gasolina</option>
                       <option value="gasolina">Petróleo</option>
-                      <option value="comporgânicos">Compostos orgânicos</option>
-                      <option value="compinorgânicos">Compostos inorgânicos</option>
-                      <option value="lipídeos">Lipídeo</option>
-                      <option value="proteina">Proteína</option>
-                      <option value="carboidrato">Carboidrato</option>
-                      <option value="aminoácido">Aminoácido</option>
-                      <option value="canabis">Canabis</option>
-                      <option value="cocaina">Cocaina</option>
-                      <option value="etanol">Etanol</option>
-                      <option value="outrasdrogas">Outras drogas</option>
+                      <option value="etanol">Etanol Combustível</option>
+                      <option value="gás">Gás</option>
                       <option value="virus">Virus</option>
                       <option value="bacteria">Bactéria</option>
                       <option value="fungo">Fungo</option>
+                      <option value="outrosagentes">Outros agentes biológicos</option>
                       <option value="outrosmetabolitos">Outros metabólitos</option>
 
 
@@ -179,16 +239,9 @@ https://templatemo.com/tm-564-plot-listing
                       <option selected>...</option>
                       <option value="brasil">Brasil</option>
                       <option value="mundial"> Mundial</option>
-                      <option value="americadosul">América do Sul</option>
                       <option value="eua">Estados Unidos</option>
-                      <option value="americadonorte">América do Norte</option>
                       <option value="europa">Europa</option>
-                      <option value="japão">Japão</option>
-                      <option value="china">China</option>
-                      <option value="rússia">Rússia</option>
-                      <option value="india">Índia</option>
-                      <option value="africa">África</option>
-                      <option value="autralia">Austrália</option>
+
 
                     </select>
                   </fieldset>
@@ -199,38 +252,146 @@ https://templatemo.com/tm-564-plot-listing
           </div>
 
         </div>
-        <fieldset>
 
+        <section>
           <ul id="ul" class="categories" onchange="opçãoProtocolos()">
+
             <li id="inmetro" style="display: none;"><a href='inmetroPlanejAnáliseProtótipo.html'><span class="icon"><img
-                    src="assets/images/icone_certificar.svg" alt="Home"></span>Inmetro</a></li>
+                    src="assets/images/icone_certificar.svg" alt="Home"></span>
+                <p><b>DOQ-CGCRE-008</b>
+                  <br>Orientação Sobre Validação De Métodos Analíticos<br>
+                  <br><b>INMETRO</b><br>
+                  Instituto Nacional de Metrologia, Qualidade e Tecnologia
+                </p>
+              </a></li>
 
-            <li id="anvisa166" class="categories" style="display: none;"><a href='anvisa166.html'><span
-                  class="icon"><img src="assets/images/icone_certificar.svg" alt="Home"></span>Anvisa166</a></li>
+            <li id="anvisa166" style="display: none;"><a href='#'><span class="icon"><img
+                    src="assets/images/icone_certificar.svg" alt="Home"></span>
+                <p><b>RDC 166/2017</b>
+                  <br><br>Dispõe sobre a validação de métodos analíticos e dá outras providências.
+                  <br><br><b>ANVISA</b>
+                  <br>Agência Nacional de Vigilância Sanitária
+                </p>
+              </a></li>
 
-            <li id="anvisa23" style="display: none;"><a href='anvisa23.html'><span class="icon"><img
-                    src="assets/images/icone_certificar.svg" alt="Home"></span>Anvisa23</a></li>
+            <li id="anvisa27" style="display: none;"><a href='#'><span class="icon"><img
+                    src="assets/images/icone_certificar.svg" alt="Home"></span>
+                <p><b>RDC 27/2012</b>
+                  <br>Dispõe sobre os requisitos mínimos para a validação de métodos bioanalíticos empregados em 
+                  estudos com fins de registro e pós-registro de medicamentos.
+                  <br><br><b>ANVISA</b>
+                  <br>Agência Nacional de Vigilância Sanitária
+                  </p>
+              </a></li>
 
-            <li id="mapa" style="display: none;"><a href='mapa.html'><span class="icon"><img
-                    src="assets/images/icone_certificar.svg" alt="Home"></span> MAPA </a></li>
+            <li id="mapa" style="display: none;"><a href='#'><span class="icon"><img
+                    src="assets/images/icone_certificar.svg" alt="Home"></span>
+                <p><b>Guia de Validação e Controle de Qualidade Analítica</b>
+                  <br>Fármacos em Produtos para Alimentação Animal e Medicamentos Veterinários<br>
+                  <br><br><b>MAPA</b><br>
+                  Ministério da Agricultura, Pecuária e Abastecimento<br>
+                  
+                </p>
+              </a></li>
 
-            <li id="FDA" style="display: none;"><a href='fda.html'><span class="icon"><img
-                    src="assets/images/icone_certificar.svg" alt="Home"></span>FDA</a></li>
+              <li id="mapa2" style="display: none;"><a href='#'><span class="icon"><img
+                src="assets/images/icone_certificar.svg" alt="Home"></span>
+            <p><b>Manual de Garantia da Qualidade Analítica</b>
+              <br>Áreas de Identidade e Qualidade de Alimentos e de Insumos
+              <br><br>
+              <b>MAPA</b><br>
+              Ministério da Agricultura, Pecuária e Abastecimento<br>
+              
+            </p>
+          </a></li>
 
-            <li id="EMA" style="display: none;"><a href='ema.html'><span class="icon"><img
-                    src="assets/images/icone_certificar.svg" alt="Home"></span>EMA</a></li>
+            <li id="sante" style="display: none;"><a href='#'><span class="icon"><img
+                    src="assets/images/icone_certificar.svg" alt="Home"></span>
+                <p><b>Guia SANTE 11312/2021 V2</b>
+                  <br>Procedimentos de Controle de Qualidade Analítica e Validação de Métodos para Análise de Resíduos de Pesticidas em Alimentos e Rações 
+                  <br><br>União Européia
 
-            <li id="forense" style="display: none;"><a href='forense.html'><span class="icon"><img
-                    src="assets/images/icone_certificar.svg" alt="Home"></span>forense</a></li>
+                </p>
+              </a></li>
 
+            <li id="q2r2" style="display: none;"><a href='#'><span class="icon"><img
+                    src="assets/images/icone_certificar.svg" alt="Home"></span>
+                <p><b>Guia Q2(R2)</b><br>Validação de procedimentos analíticos ICH: texto e metodologia
+                <br><b>Guia Q14</b><br>Desenvolvimento de Procedimento Analítico</p>
+                <br><b>ICH/EMA</b>
+              </a></li>
 
+            <li id="m10" style="display: none;"><a href='#'><span class="icon"><img
+                    src="assets/images/icone_certificar.svg" alt="Home"></span>
+                <p><b>Guia M10</b>
+                  <br>Validação do método bioanalítico ICH e análise de amostra de estudo
+                  <br><b>ICH/EMA</b>
+                </p>
+              </a></li>
 
-        </fieldset>
+            <li id="ueResiduo" style="display: none;"><a href='#'><span class="icon"><img
+                    src="assets/images/icone_certificar.svg" alt="Home"></span>
+                  <br><b>Guia UE</b>
+                  <br>Orientações sobre validação em relação a resíduos de medicamentos veterinários.
+                  <br><br><b>União Européia</b>
+                </p>
+              </a></li>
+
+            <li id="iupac" style="display: none;"><a href='#'><span class="icon"><img
+                    src="assets/images/icone_certificar.svg" alt="Home"></span>
+                <p><b>Guia IUPAC<br>Relatórios Técnicos</b>
+                  <br>Validação de métodos de análise em laboratório único
+                  <br><br><b>IUPAC</b><br> União Internacional de Química Pura e Aplicada
+                </p>
+              </a></li>
+
+            <li id="eurachem" style="display: none;"><a href='#'><span class="icon"><img
+                    src="assets/images/icone_certificar.svg" alt="Home"></span>
+                <p><b>Guia Eurachem e Suplementos</b>
+                  <br>A adequação para o propósito de métodos analíticos
+                  <br><br><b>Eurachem</b>
+                </p>
+              </a></li>
+
+            <li id="aoacAmbiental" style="display: none;"><a href='#'><span class="icon"><img
+                    src="assets/images/icone_certificar.svg" alt="Home"></span>
+                <p><b>Guia AOAC International</b>
+                  <br>Validação de Métodos Microbiológicos em Superfícies Ambientais
+                  <br><b>AOAC/FDA</b>
+                </p>
+              </a></li>
+
+            <li id="aoacAlimentosRações" style="display: none;"><a href='#'><span class="icon"><img
+                    src="assets/images/icone_certificar.svg" alt="Home"></span>
+                <p><p><b>Guia AOAC International</b>
+                  <br>Diretrizes para A Validação de Métodos Analíticos para Detecção de Patógenos 
+                  Microbianos em Alimentos e Rações
+                  <br><br><b>AOAC/FDA</b>
+                </p>
+              </a></li>
+
+              <li id="aoacQualiBinary" style="display: none;"><a href='#'><span class="icon"><img
+                src="assets/images/icone_certificar.svg" alt="Home"></span>
+            <p><b>Guia AOAC International</b>
+              <br>Validação de métodos de química binária qualitativa
+              <br><b>AOAC/FDA</b>
+            </p>
+          </a></li>
+
+          <li id="aoacAgBio" style="display: none;"><a href='#'><span class="icon"><img
+            src="assets/images/icone_certificar.svg" alt="Home"></span>
+        <p><p><b>Guia AOAC International</b>
+          Validação de métodos e/ou procedimentos de agentes de ameaças biológicas
+          <br><b>AOAC/FDA</b>
+        </p>
+      </a></li>
+    </ul>
+        </section>
 
       </div>
     </div>
   </div>
-  </div>
+
 
 
   <div class="popular-categories">
