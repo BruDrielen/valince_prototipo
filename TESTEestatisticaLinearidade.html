@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <title>Escolha do melhor protocolo de validação</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-plot-listing.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+    <!--
+
+TemplateMo 564 Plot Listing
+
+https://templatemo.com/tm-564-plot-listing
+
+-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    <style>
+        .categories {
+            margin: 0px;
+            list-style: none;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            gap: 1px;
+            /* Espaçamento entre os itens */
+        }
+
+        .categories li {
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+            flex-direction: column;
+            align-items: center;
+            font-size: 16px;
+            margin: 10px;
+            min-width: 250px;
+            /* Aumenta a largura mínima */
+            max-width: 300px;
+            /* Aumenta a largura máxima opcional */
+            gap: 5px;
+        }
+
+        .categories a {
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            width: 100%;
+            min-width: 250px;
+            /* Aumenta a largura mínima */
+            max-width: 300px;
+            /* Aumenta a largura máxima opcional */
+        }
+
+        .categories a p {
+            color: white;
+            margin: 0px;
+            padding: 3px 0 0 0;
+            word-wrap: break-word;
+            line-height: 1.5;
+            text-shadow: 2px 1px rgba(0, 0, 0, 0.76);
+            font-weight: 500;
+            text-align: center;
+            width: 100%;
+            /* Ajuste a largura para 100% do contêiner pai */
+        }
+
+
+        .categories img {
+            max-width: 50px;
+            /* Ajuste o tamanho da imagem conforme necessário */
+            margin-bottom: 5px;
+            height: auto;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- ***** Preloader End ***** -->
+    </div>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav" style="color: white;">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo"></a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html">Bem-vindo(a)!</a></li>
+                            <li><a href="tutorialValidaçãoprotótipo.html">Tutorial Validação</a></li>
+                            <li><a href="#">Tutorial Incerteza</a></li>
+                            <li><a href="#">Bibliografia</a></li>
+                            <li><a href="#">Glossário</a></li>
+                        </ul>
+                        <a class="menu-trigger"><span>Menu</span></a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="main-banner" style="margin-top: 0%;text-align: center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+
+                    <h2 class="titulosA">Orientações sobre a avaliação estatística no estudo de Linearidade</h2>
+
+                    <div class="AP4" style="width: 100%;padding: 15px;font-weight:450;">
+                        A linearidade de um método não pode ser observada apenas por meio do gráfico dos resultados de
+                        resposta em função da concentração do analito. Para o estudo deste parâmetro, é necessário
+                        investigar a melhor função f(x) que representa o comportamento linear esperado. Neste contexto,
+                        o estudo desta equação deve ser realizado através de alguns testes e avaliações estatísticas,
+                        que são definidos a seguir.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <section>
+
+        <div class="popular-categories">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-heading">
+                            <h2>Testes estatísticos recomendados</h2>
+                            <h6>Informações e conceitos</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="naccs">
+                            <div class="grid">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="menu">
+                                            <div class="first-thumb active">
+                                                <div class="thumb">
+                                                    <span class="icon"><img
+                                                            src="assets/images/testesLinearidade/Icone_residuos.svg"
+                                                            alt=""></span>
+                                                    Resíduos
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="thumb">
+                                                    <span class="icon"><img src="assets/images/icone_verificação1.svg"
+                                                            alt=""></span>
+                                                    Equação da reta
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="thumb">
+                                                    <span class="icon"><img src="assets/images/icone_incerteza1.svg"
+                                                            alt=""></span>
+                                                    Regressão Linear
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="thumb">
+                                                    <span class="icon"><img
+                                                            src="assets/images/icone_parametrodedesempenho.svg"
+                                                            alt=""></span>
+                                                    Homocedasticidade
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="thumb">
+                                                    <span class="icon"><img
+                                                            src="assets/images/icone_parametrodedesempenho.svg"
+                                                            alt=""></span>
+                                                    Mín. Quad. Ordinários (MMQO)
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="thumb">
+                                                    <span class="icon"><img
+                                                            src="assets/images/icone_parametrodedesempenho.svg"
+                                                            alt=""></span>
+                                                    Mín. Quad. Ponderados (MMQP)
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="thumb">
+                                                    <span class="icon"><img
+                                                            src="assets/images/icone_parametrodedesempenho.svg"
+                                                            alt=""></span>
+                                                    Coeficientes (r e r²)
+                                                </div>
+                                            </div>
+                                            <div class="last-thumb">
+                                                <div class="thumb">
+                                                    <span class="icon"><img
+                                                            src="assets/images/icone_fontesdeincerteza.svg"
+                                                            alt=""></span>
+                                                    Teste de outliers
+                                                </div>
+                                            </div>
+                                            <div class="last-thumb">
+                                                <div class="thumb">
+                                                    <span class="icon"><img
+                                                            src="assets/images/icone_fontesdeincerteza.svg"
+                                                            alt=""></span>
+                                                    Análise de Variância
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-9 align-self-center">
+                                        <ul class="nacc">
+                                            <li class="active">
+                                                <div>
+                                                    <div class="thumb">
+                                                        <div class="row">
+                                                            <div class="col-lg-5 align-self-center">
+                                                                <div class="left-textL">
+                                                                    <h4><br>Desvios verticais (y) de cada ponto da linha
+                                                                        reta</h4>
+                                                                    <p>Os desvios verticais (y) de cada ponto da linha
+                                                                        reta são chamados de resíduos, e por meio deles
+                                                                        é possível estimar os erros aleatórios na
+                                                                        direção y.
+                                                                        <br><br>Os resíduos representam tanto os
+                                                                        valores absolutos quanto os relativos
+                                                                        (percentuais) das diferenças entre os valores
+                                                                        experimentais (observados) e os valores teóricos
+                                                                        (calculados) obtidos pela equação da regressão
+                                                                        linear correspondente.
+                                                                        <br><br>Os resíduos absolutos em
+                                                                        y são somados para formar 'SStot', que
+                                                                        quantifica a variação total nos valores
+                                                                        observados de y, medidos a partir da média de y.
+
+                                                                        <br><br>Para a obtenção da “melhor função”, é
+                                                                        necessário
+                                                                        que
+                                                                        a soma dos quadrados dos resíduos absolutos,
+                                                                        para
+                                                                        todos os pontos, seja minimizada.
+                                                                        <br><br>Esta
+                                                                        minimização é
+                                                                        realizada através da <b>Regressão Linear pelo
+                                                                            Método
+                                                                            dos Mínimos Quadrados</b>.
+                                                                        <br><br>Este método,
+                                                                        além de fornecer o melhor ajuste entre os pontos
+                                                                        experimentais e a linha reta, também fornece os
+                                                                        desvios padrão para <i>m</i> ou a e para
+                                                                        <i>b</i>,
+                                                                        de acordo com a técnica de cálculo de
+                                                                        minimização
+                                                                        adequada.
+                                                                    </p>
+
+                                                                    <br>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-7 align-self-center"
+                                                                style="display: block;">
+                                                                <div class="right-image">
+                                                                    <div style="text-align: center;">
+                                                                        <img style="margin-bottom: 10px;border-radius: 5px;"
+                                                                            src="assets/images/testesLinearidade/residuo01.png"
+                                                                            alt="">
+
+                                                                        <p style="text-align: center;color: aliceblue;">
+                                                                            Ou
+                                                                        </p>
+
+
+                                                                        <img style="margin-bottom: 10px;width: 70%;text-align: center;"
+                                                                            src="assets/images/testesLinearidade/residuo02.png"
+                                                                            alt="">
+
+
+                                                                        <img style="margin-bottom: 10px;width: 70%;text-align: center;"
+                                                                            src="assets/images/testesLinearidade/residuo03.png"
+                                                                            alt="">
+
+                                                                        <p style="color: aliceblue;">Onde:
+                                                                            <br> <b>y</b> = resposta instrumental
+                                                                            <br><span
+                                                                                style="text-decoration: overline;">
+                                                                                <b>y</b></span>
+                                                                            = média de todos os valores de y
+                                                                            encontrados
+
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div>
+                                                    <div class="thumb">
+                                                        <div class="row">
+                                                            <div class="col-lg-5 align-self-center">
+                                                                <div class="left-textL">
+                                                                    <h4>Relação concentração/resposta (x,y)</h4>
+
+                                                                    <p>Este modelo prevê resultados de
+                                                                        𝑦
+                                                                        y a partir de
+                                                                        𝑥
+                                                                        x, assumindo resposta analítica diretamente
+                                                                        proporcional à concentração, caracterizando-se
+                                                                        como
+                                                                        uma equação de primeiro grau (GUIA nº 10, versão
+                                                                        1,
+                                                                        de 30 de agosto de 2017).
+                                                                        <br><br>A linha de regressão é
+                                                                        usada para estimar concentrações e o limite de
+                                                                        detecção analítica.
+                                                                        <br><br>O processo de quantificação
+                                                                        relaciona resposta medida e concentração do
+                                                                        analito,
+                                                                        obtendo linearidade por padronização e expressa
+                                                                        matematicamente.
+                                                                        <br><br>A equação da reta, obtida por
+                                                                        regressão linear, valida a relação entre
+                                                                        resposta
+                                                                        instrumental e concentração do analito.
+                                                                    </p>
+                                                                    <br>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-7 align-self-center"
+                                                                style="display: block;">
+                                                                <div class="right-image">
+                                                                    <div style="text-align: center;">
+
+
+                                                                        <img style="margin-bottom: 10px;width: 40%;text-align: center;"
+                                                                            src="assets/images/testesLinearidade/eq02.png"
+                                                                            alt="">
+                                                                        <p style="color: aliceblue;line-height: 1.5;
+                                                                        text-align: left;">
+                                                                            Onde:<br>
+                                                                            y = resposta instrumental<br>
+                                                                            b = coeficiente linear - Inclinação da curva
+                                                                            de calibração (sensibilidade)<br>
+                                                                            a = coeficiente angular - Interseção com o
+                                                                            eixo y, quando b = 0.<br>
+                                                                            x = concentração do analito na solução
+                                                                            padrão de calibração.<br>
+                                                                        </p>
+                                                                        <br>
+                                                                        <img style="margin-bottom: 10px;width: 90%;text-align: center;"
+                                                                            src="assets/images/testesLinearidade/eq03.png"
+                                                                            alt="">
+                                                                        <p style="color: aliceblue;">
+                                                                            Onde:<br>
+                                                                            x<sub>i</sub> = valores individuais de
+                                                                            concentração;<br>
+                                                                            y<sub>i</sub> = valores individuais de sinal
+                                                                            instrumental;<br>
+                                                                            <span
+                                                                                style="text-decoration: overline;">x</span>
+                                                                            : média de valores de x (concentração);<br>
+                                                                            <span
+                                                                                style="text-decoration: overline;">y</span>
+                                                                            : média de valores de y (sinal
+                                                                            instrumental).
+                                                                        </p>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+
+
+                                            <li>
+                                                <div>
+                                                    <div class="thumb">
+                                                        <div class="row">
+                                                            <div class="col-lg-5 align-self-center">
+                                                                <div class="left-textL">
+                                                                    <h4>Regressão Linear pelos Minimos Quadrados</h4>
+                                                                    <p>O método dos mínimos quadrados calcula a soma dos
+                                                                        quadrados dos resíduos (SSresid) para estimar
+                                                                        erros
+                                                                        aleatórios em y, minimizando-os de acordo com
+                                                                        técnica apropriada de minimização.
+                                                                        <br><br>A validação
+                                                                        das
+                                                                        suposições do modelo ajustado é crucial para
+                                                                        garantir a confiabilidade dos resultados.
+                                                                        <br><br>A
+                                                                        Análise
+                                                                        dos Resíduos emprega técnicas para avaliar a
+                                                                        adequação de modelos de regressão com base nos
+                                                                        resíduos, destacando a importância de verificar
+                                                                        erros aleatórios na inclinação e interceptação.
+                                                                        <br><br>A
+                                                                        regressão linear modela a relação entre a
+                                                                        resposta e
+                                                                        variáveis explicativas por meio de uma função
+                                                                        linear
+                                                                        de parâmetros, sendo fundamental na estimativa e
+                                                                        incertezas associadas.
+                                                                        <br><br>Resumidamente, se existe uma relação
+                                                                        verdadeiramente linear entre a resposta medida y
+                                                                        e a
+                                                                        concentração analítica do padrão x, a relação
+                                                                        matemática que descreve essa consideração é
+                                                                        denominada modelo de regressão, que pode ser
+                                                                        representada através da equação da reta.
+                                                                    </p>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-7 align-self-center">
+                                                                <div class="right-image">
+                                                                    <div style="text-align: center;margin-left: 30px;margin-right: auto;
+                                                                    width: 100%;">
+
+                                                                        <img style="margin-bottom: 10px;"
+                                                                            src="assets/images/testesLinearidade/eq03.png"
+                                                                            alt="cars in the city">
+
+                                                                        <br>
+
+                                                                        <p style="color: aliceblue;line-height: 1.5;
+                                                                        text-align: left;">
+                                                                            Onde:<br>
+                                                                            x<sub>i</sub> = valores individuais de
+                                                                            concentração;<br>
+                                                                            y<sub>i</sub> = valores individuais de sinal
+                                                                            instrumental;<br>
+                                                                            <span
+                                                                                style="text-decoration: overline;">x</span>
+                                                                            : média de valores de x (concentração);<br>
+                                                                            <span
+                                                                                style="text-decoration: overline;">y</span>
+                                                                            : média de valores de y (sinal
+                                                                            instrumental).
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div>
+                                                    <div class="thumb">
+                                                        <div class="row">
+                                                            <div class="col-lg-5 align-self-center">
+                                                                <div class="left-textL">
+                                                                    <h4><br>Avaliação da Homocedasticidade</h4>
+                                                                    <p>A avaliação da homocedasticidade precede a
+                                                                        execução da regressão linear. Este
+                                                                        procedimento
+                                                                        visa verificar se as variâncias dos
+                                                                        resultados
+                                                                        experimentais são iguais em diferentes
+                                                                        níveis de
+                                                                        concentração.
+                                                                        <br><br>A análise da homocedasticidade
+                                                                        envolve a verificação da uniformidade das
+                                                                        variâncias dos resíduos, podendo ser
+                                                                        realizada
+                                                                        através de testes como Cochran (ISO
+                                                                        5725-3:1994), Levene (SOUZA e JUNQUEIRA,
+                                                                        2005)
+                                                                        ou Brown-Forsythe (SOUZA; JUNQUEIRA, 2005).
+
+                                                                        <br><br>Esta verificação decide o tipo de
+                                                                        regressão
+                                                                        a
+                                                                        ser aplicada, sendo ordinária para
+                                                                        homogeneidade
+                                                                        de variâncias ou ponderada caso contrário.
+                                                                        <br><br>O
+                                                                        Teste de Cochran compara a maior variância
+                                                                        com
+                                                                        as demais, dividindo uma pela outra e
+                                                                        comparando
+                                                                        o resultado com um valor tabelado.
+                                                                        <br><br>Valores
+                                                                        menores indicam homogeneidade das
+                                                                        variâncias,
+                                                                        caracterizando comportamento homocedástico,
+                                                                        enquanto valores maiores apontam
+                                                                        heterogeneidade, caracterizando
+                                                                        comportamento
+                                                                        heterocedástico.
+
+                                                                        <br><br>Com variâncias homocedásticas,
+                                                                        utiliza-se
+                                                                        regressão linear ou interpolação polinomial
+                                                                        pelo
+                                                                        Método dos Mínimos Quadrados Ordinários. Em
+                                                                        caso
+                                                                        de heterocedasticidade, aplica-se Mínimos
+                                                                        Quadrados Ponderados.
+                                                                    </p>
+
+                                                                    <br>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-7 align-self-center"
+                                                                style="display: block;">
+                                                                <div class="right-image">
+                                                                    <div style="text-align: center;margin-left: 40px;margin-right: auto;
+                                                                    width: 100%;">
+
+                                                                        <img style="margin-bottom: 20px;width: 90%;"
+                                                                            src="assets/images/testesLinearidade/cochran01.png"
+                                                                            alt="">
+
+                                                                        <img style="margin-bottom: 20px;width: 90%;"
+                                                                            src="assets/images/testesLinearidade/cochran02.png"
+                                                                            alt="">
+
+                                                                        <p style="text-align: center;color: aliceblue;">
+                                                                            Onde:<br>
+                                                                            <i><b>k:</b></i> representa o número de
+                                                                            níveis do fator;
+                                                                            <br><i><b>s<sup>2</sup><sub>i</sub>
+                                                                                    :</b></i> representa a variância
+                                                                            amostral;
+                                                                            <br><i><b>n:</b></i> representa o número de
+                                                                            medidas em cada
+                                                                            nível do fator.
+
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </li>
+
+                                            <li>
+                                                <div>
+                                                    <div class="thumb">
+                                                        <div class="row">
+                                                            <div class="col-lg-5 align-self-center">
+                                                                <div class="left-textL">
+                                                                    <h4><br>Regressão dos Mínimos Quadrados
+                                                                        Ordinários (MMQO)</h4>
+                                                                    <p>Dado um modelo de regressão linear a hipótese de
+                                                                        homocedasticidade implica que a variância do
+                                                                        erro
+                                                                        experimental é a mesma para todas as
+                                                                        observações,
+                                                                        isto é, quando as variâncias dos resíduos
+                                                                        ocorrem de
+                                                                        forma homogênea, os pesos <i>wi</i> iguais,
+                                                                        e a equação fica como mostra a equação ao lado.
+                                                                        <br><br>
+                                                                        Desta forma, para um cálculo de regressão em que
+                                                                        os
+                                                                        erros aleatórios se mantêm consistentes em
+                                                                        diferentes pontos da calibração à medida que a
+                                                                        concentração aumenta, a linha de regressão deve
+                                                                        ser
+                                                                        calculada atribuindo o mesmo peso a todos os
+                                                                        pontos.
+                                                                        <br><br>Como as variâncias dos resíduos são
+                                                                        constantes,
+                                                                        o
+                                                                        desvio padrão também é constante, o que implica
+                                                                        que
+                                                                        o peso
+                                                                        𝑤𝑖
+                                                                        para todos os níveis de concentração tem o mesmo
+                                                                        valor, sendo considerado como 1 para a regressão
+                                                                        ordinária.
+                                                                    </p>
+
+                                                                    <br>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-7 align-self-center"
+                                                                style="display: block;">
+                                                                <div class="right-image">
+                                                                    <div style="text-align: center;margin-left: 40px;margin-right: auto;
+                                                                    width: 80%;">
+
+                                                                        <img style="margin-bottom: 20px;width: 90%;"
+                                                                            src="assets/images/testesLinearidade/mmqo01.png"
+                                                                            alt="">
+
+                                                                        <img style="margin-bottom: 20px;width: 90%;"
+                                                                            src="assets/images/testesLinearidade/eq03.png"
+                                                                            alt="">
+
+                                                                        <p style="color: aliceblue;line-height: 1.5;
+                                                                       ">
+                                                                            Onde:<br>
+                                                                            x<sub>i</sub> = valores individuais de
+                                                                            concentração;<br>
+                                                                            y<sub>i</sub> = valores individuais de sinal
+                                                                            instrumental;<br>
+                                                                            <span
+                                                                                style="text-decoration: overline;">x</span>
+                                                                            : média de valores de x (concentração);<br>
+                                                                            <span
+                                                                                style="text-decoration: overline;">y</span>
+                                                                            : média de valores de y (sinal
+                                                                            instrumental).
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </li>
+
+                                            <li>
+                                                <div>
+                                                    <div class="thumb">
+                                                        <div class="row">
+                                                            <div class="col-lg-5 align-self-center">
+                                                                <div class="left-textL">
+                                                                    <h4><br>Regressão dos Mínimos Quadrados Ponderada
+                                                                        (MMQP)</h4>
+                                                                    <p>Na regressão linear pelos mínimos quadrados
+                                                                        ordinários, presume-se que os desvios dos pontos
+                                                                        da linha reta se devem a erros na medida,
+                                                                        especificamente em y (erros aleatórios), sem
+                                                                        considerar erros nos valores de x.
+                                                                        <br><br>Contudo,
+                                                                        quando há desvios significativos nos dados de x,
+                                                                        a análise linear por mínimos quadrados pode não
+                                                                        produzir a melhor linha reta, exigindo uma
+                                                                        análise de correlação mais complexa.
+                                                                        <br><br>Além disso,
+                                                                        a abordagem por mínimos quadrados simples pode
+                                                                        ser inadequada se os desvios nos valores de y
+                                                                        variarem consideravelmente em relação a x,
+                                                                        tornando necessário aplicar pesos diferentes aos
+                                                                        dados e realizar uma análise ponderada por
+                                                                        mínimos quadrados.
+                                                                        <br><br>
+                                                                        Em casos onde os erros na regressão são
+                                                                        proporcionais às concentrações do analito, ou
+                                                                        seja, aumentam com a concentração em diferentes
+                                                                        pontos da calibração, a linha de regressão deve
+                                                                        atribuir pesos adicionais aos pontos com menores
+                                                                        erros.
+                                                                        <br><br>É mais crucial que a linha ajustada
+                                                                        passe
+                                                                        próximo desses pontos do que dos que representam
+                                                                        concentrações maiores, mas com erros também
+                                                                        maiores.
+                                                                        <br><br>Esse método é alcançado ao atribuir a
+                                                                        cada ponto uma ponderação inversamente
+                                                                        proporcional à sua variância correspondente,
+                                                                        aplicando-se a todos os cálculos de regressão
+                                                                        ponderada, não apenas quando o erro em y é
+                                                                        proporcional a x.
+                                                                        <br><br>
+                                                                        A linha de regressão em um cálculo onde os erros
+                                                                        aumentam com a concentração deve ser ponderada
+                                                                        proporcionalmente às concentrações.
+                                                                        <br><br>Isso se deve
+                                                                        à relação direta entre as variâncias dos
+                                                                        resíduos e as concentrações, exigindo ajustes
+                                                                        individuais nos pesos wi para cada nível de
+                                                                        concentração.
+                                                                        <br><br>Observações com maior
+                                                                        variabilidade nos resíduos recebem menor peso na
+                                                                        inferência dos parâmetros da regressão, enquanto
+                                                                        aquelas com menor variância são mais confiáveis.
+                                                                        <br><br> Os mínimos quadrados ordinários são um
+                                                                        caso
+                                                                        especial dos mínimos quadrados ponderados, com
+                                                                        fator de ponderação igual a 1.
+                                                                    </p>
+
+
+                                                                    <br>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-7 align-self-center"
+                                                                style="display: block;">
+                                                                <div class="right-image">
+                                                                    <div style="text-align: center;margin-left: 40px;margin-right: auto;
+                                                                    width: 80%;">
+
+                                                                        <img style="margin-bottom: 20px;width: 70%;"
+                                                                            src="assets/images/testesLinearidade/mmqp01.png"
+                                                                            alt="">
+
+
+                                                                        <img style="margin-bottom: 20px;"
+                                                                            src="assets/images/testesLinearidade/mmqp02.png"
+                                                                            alt="">
+
+
+                                                                        <img style="margin-bottom: 20px;padding: auto;border-radius: 10px;width: 100%;"
+                                                                            src="assets/images/testesLinearidade/mmqp03.png"
+                                                                            alt="">
+
+                                                                        <img style="margin-bottom: 20px;width: 70%;"
+                                                                            src="assets/images/testesLinearidade/mmqp04.png"
+                                                                            alt="">
+
+                                                                        <p>
+                                                                        <p style="color: aliceblue;line-height: 1.5;">
+                                                                            Onde:<br>
+                                                                            w<sub>i</sub> = peso (ponderação);<br>
+                                                                            n = número de observações no nível;<br>
+                                                                            s = desvio padrão;<br>
+                                                                            s<sup>2</sup> = variância<br>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+
+                                            <li>
+                                                <div>
+                                                    <div class="thumb">
+                                                        <div class="row">
+                                                            <div class="col-lg-5 align-self-center">
+                                                                <div class="left-textL">
+                                                                    <h4>Coeficiente de Correlação (r)
+                                                                        <br>Coeficiente de Determinação (r²)
+                                                                    </h4>
+
+                                                                    <p><b>Coeficiente de Correlação (r):</b><br>
+                                                                        É um indicador do grau de correlação entre as
+                                                                        duas variáveis (x,y) que estão sendo estudadas
+                                                                        (concentração/sinal). 
+                                                                        <br><br>É utilizado para estimar
+                                                                        quanto exatamente os pontos experimentais se
+                                                                        ajustam a uma linha reta.
+                                                                        <br><br>O coeficiente de correlação r é igual à
+                                                                        covariância de x e y dividido pelo produto de
+                                                                        seus desvios padrão; portanto, se x e y não
+                                                                        estiverem relacionados, r também estará próximo
+                                                                        de zero.
+                                                                        <br><br>
+                                                                        <b>Coeficiente de Determinação (r²):</b><br>
+                                                                        Mensura a fração da variação observada em y que
+                                                                        é explicada pela relação linear.
+                                                                        <br><br>Avalia o mesmo que o coeficiente de correlação,
+                                                                        porém considera seu valor ao quadrado, para que
+                                                                        valores negativos sejam compensados.
+                                                                        <br><br>O coeficiente de determinação mede a fração da
+                                                                        variação observada em y que é explicada pela
+                                                                        relação linear.
+
+
+                                                                    </p>
+
+                                                                    <br>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-7 align-self-center"
+                                                                style="display: block;">
+                                                                <div class="right-image">
+                                                                    <div style="text-align: center;margin-left: 40px;margin-right: auto;
+                                                                    width: 80%;">
+                                                                        <img style="margin-bottom: 10px;border-radius: 5px;"
+                                                                            src="assets/images/testesLinearidade/r2.png"
+                                                                            alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div>
+                                                    <div class="thumb">
+                                                        <div class="row">
+                                                            <div class="col-lg-5 align-self-center">
+                                                                <div class="left-textL">
+                                                                    <h4><br>Teste de <i>outliers</i>
+                                                                    </h4>
+                                                                    <p>Antes de fazer a regressão linear, alguns testes
+                                                                        estatísticos devem ser realizados.
+                                                                        <br><br>A verificação da ausência de valores aberrantes
+                                                                        (em inglês, outliers) para cada nível de
+                                                                        concentração, é um dos testes que devem ser
+                                                                        realizados.
+                                                                        <br><br>O teste para verificação de outliers pode ser
+                                                                        realizado por vários modelos matemáticos como
+                                                                        Teste de Grubbs (ISO 5725-3,1994 e ISO 5725-2,
+                                                                        1994) ou com base nos resíduos padronizados
+                                                                        Jacknife (SOUZA e JUNQUEIRA, 2005).
+                                                                        <br><br>As verificações podem realizadas por meio do
+                                                                        Teste de Grubbs (G).
+                                                                        <br><br>Este modelo compara o desvio do valor suspeito
+                                                                        da média da amostra com o desvio padrão da
+                                                                        amostra. 
+                                                                        <br><br>O valor suspeito é o valor mais
+                                                                        distante da média. 
+                                                                        <br><br>Os valores obtidos são
+                                                                        comparados com valores críticos tabelados para o
+                                                                        valor de “G”. Se o valor calculado de “G”
+                                                                        exceder o valor crítico tabelados, o valor
+                                                                        suspeito será rejeitado.
+                                                                        <br><br>
+                                                                        A verificação de <i>outlier</i> de
+                                                                        duas maneiras diferentes:
+                                                                        <br><br>
+                                                                        <i>Outlier</i> para resíduos totais: avalia
+                                                                        valores
+                                                                        discrepantes de resíduos considerando todo o
+                                                                        conjunto de dados, contemplando todas as
+                                                                        replicatas em todos os níveis. Ou seja, avalia
+                                                                        outliers relativo ao conjunto de dados totais,
+                                                                        baseado nos resíduos absolutos.
+                                                                        <br><br>
+                                                                        <i>Outlier</i> para resíduos por níveis: avalia
+                                                                        valores discrepantes de resíduos considerando
+                                                                        apenas as replicatas do respectivo nível
+                                                                        avaliado. Ou seja, verifica outliers dentro do
+                                                                        nível estudado, baseado nos desvios relativos.
+
+                                                                        <br>
+
+                                                                    </p>
+
+                                                                    <br>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-7 align-self-center"
+                                                                style="display: block;">
+                                                                <div class="right-image">
+                                                                    <div style="text-align: center;margin-left: 40px;margin-right: auto;
+                                                                    width: 80%;">
+                                                                        <img style="margin-bottom: 10px;border-radius: 5px;"
+                                                                            src="assets/images/testesLinearidade/grubs01.png"
+                                                                            alt="">
+
+                                                                        </p>
+
+                                                                        <p style="color: aliceblue;">
+                                                                            Onde:<br>
+
+                                                                            <i><b>Valor: </b></i> valor suspeito;<br>
+                                                                            <i><b>x: </b></i> média amostral;<br>
+                                                                            <i><b>s: </b></i> desvio padrão amostral.
+
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+
+                                            <li>
+                                                <div>
+                                                    <div class="thumb">
+                                                        <div class="row">
+                                                            <div class="col-lg-5 align-self-center">
+                                                                <div class="left-textL">
+                                                                    <h4><br>ANOVA<br>
+                                                                        Análise de variância
+                                                                    </h4>
+
+                                                                    <p>A partir do modelo definido pelo Teste de
+                                                                        Cochran, obtém-se a equação da reta utilizada
+                                                                        para calcular os valores esperados da regressão,
+                                                                        essenciais para a ANOVA. 
+                                                                        <br><br>A Análise de Variância
+                                                                        envolve um teste de significância com múltiplas
+                                                                        fontes de variação aleatória. Na validação de
+                                                                        métodos, verifica-se se a reta de regressão
+                                                                        estimada explica a relação entre concentração e
+                                                                        sinal, ou seja, se y varia significativamente em
+                                                                        relação a x. Dependendo do método (MMQO ou
+                                                                        MMQP), a ANOVA usa diferentes fatores para o
+                                                                        cálculo.
+                                                                        <br><br>
+                                                                        A ANOVA avalia todas as fontes de variação:
+                                                                        <br><br>
+                                                                        Regressão: variação das respostas em relação ao
+                                                                        centroide.
+                                                                        <br><br>
+                                                                        Resíduos: variação das respostas reais em
+                                                                        relação ao modelo.
+                                                                        <br><br>
+                                                                        Total: soma das variações da regressão e dos
+                                                                        resíduos.
+                                                                        <br><br>
+                                                                        Para comprovar a linearidade, é necessário
+                                                                        demonstrar que a variação devido à regressão é
+                                                                        significativamente maior que a devida aos
+                                                                        resíduos. 
+                                                                        <br><br>A ANOVA pode ser calculada pelo Teste
+                                                                        F, que compara os desvios padrão de dois
+                                                                        conjuntos de dados, considerando a relação entre
+                                                                        suas variações.
+
+                                                                        <br><br>A análise baseia-se nas variâncias dos resíduos,
+                                                                        onde a soma dos quadrados dos resíduos (SSresid)
+                                                                        mede a variação não explicada pela relação
+                                                                        linear entre x e y, e a soma dos quadrados da
+                                                                        regressão (SSregr) é a diferença entre SStot e
+                                                                        SSresid. 
+                                                                       
+                                                                    </p>
+
+                                                                    <br>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-7 align-self-center"
+                                                                style="display: block;">
+                                                                <div class="right-image">
+                                                                    <div style="text-align: center;margin-left: 50px;margin-right: auto;
+                                                                    width: 80%;">
+                                                                        <img src="assets/images/testesLinearidade/anova01.png"
+                                                                            alt="">
+
+                                                                        <p style="text-align: center;color: aliceblue;">
+                                                                            Ou
+                                                                        </p>
+
+
+                                                                        <img src="assets/images/testesLinearidade/anova02.png"
+                                                                            alt="">
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <br>
+    <br>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="about">
+                        <div class="logo">
+                            <img src="assets/images/icon_verification03.png" alt="Plot Listing">
+                        </div>
+                        <p>Tutuoriais orientativos<a rel="nofollow" href="https://templatemo.com/tm-564-plot-listing"
+                                target="_parent"> NOME DO SOFTWARE</a> te ajudando a extrair o melhor de você e seus
+                            métodos analíticos!
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="helpful-links">
+                        <h4>Links importantes</h4>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <ul>
+                                    <li><a href="#">Tutoriais</a></li>
+                                    <li><a href="#">Protocolos</a></li>
+                                    <li><a href="#">Orgãos reguladores</a></li>
+                                    <li><a href="#">Contato</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><a href="#">Sobre nós</a></li>
+                                    <li><a href="#">Prêmios</a></li>
+                                    <li><a href="#">Sites recomendados</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-us">
+                        <h4>Encontre-nos</h4>
+                        <p>IQSC - Universidade Estadual Paulista USP</p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="#">010-020-0340</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="#">090-080-0760</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="sub-footer">
+                        <p>Copyright © 2021 Plot Listing Co., Ltd. All Rights Reserved.
+                            <br>
+                            Design: <a rel="nofollow" href="https://templatemo.com" title="CSS Templates">TemplateMo</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Scripts -->
+
+    <script src="assets/js/pdfteste.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
+
+
+</body>
+
+</html>
