@@ -373,10 +373,10 @@ body {
 
 .header-area .main-nav .nav li a {
   display: block;
-  font-weight: 500;
-  text-shadow: #000 2px;
+  font-weight: 550;
+  text-shadow: #77b3cf 2px;
   font-size: 14px;
-  color: #7ec8eb;
+  color: #0a4663;
   text-transform: uppercase;
   height: 40px;
   line-height: 40px;
@@ -386,7 +386,7 @@ body {
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #8d99af !important;
+  color:  #77b3cf!important;
 }
 
 /* Menu Trigger */
