@@ -243,87 +243,143 @@ https://templatemo.com/tm-564-plot-listing
         <span><b>Verificação de equipamentos</b></span>
       </div>
 
-      <table id="tabela_um" class="w3-table w3-striped w3-white">
-        <tr>
-          <td><b>A.</b></td>
-          <td> O(s) equipamentos(s) possui(em) capacidade de obter resultados nas concetrações pretendidas? <a href="verificarEquipamento.html">(Como verificar?)</a>
-          </td>
-          <td>Sim <i><input type="checkbox" id="feito" name="feito"></i>
-          Não <i><input type="checkbox" id="feito" name="feito"></i></td>
-        </tr>
-        <tr>
-          <td><b>B.</b></td>
-          <td>O(s) equipamento(s) está(ão) adequado(s) para o tipo de matriz e analito que serão abordados? <a href="verificarEquipamento.html">(Como verificar?)</a>
-          </td>
-          <td>Sim <i><input type="checkbox" id="feito" name="feito"></i>
-            Não <i><input type="checkbox" id="feito" name="feito"></i></td>
-        </tr>
-        <tr>
-          <td><b>C.</b></td>
-          <td>O(s) equipamento(s) possui(em) resolução adequada ao estudo pretedido? <a href="verificarEquipamento.html">(Como verificar?)</a>
-          </td>
-          <td>Sim <i><input type="checkbox" id="feito" name="feito"></i>
-            Não <i><input type="checkbox" id="feito" name="feito"></i>
-        </tr>
-        <td><b>D.</b></i></td>
-        <td>O(s) equipamento(s) precisa(m) de calibração ou verificação periódica? Foi realizada? <a href="verificarEquipamento.html">(Como verificar?)</a>
-        </td>
-        <td>Sim <i><input type="checkbox" id="feito" name="feito"></i>
-          Não <i><input type="checkbox" id="feito" name="feito"></i>
-          <br>Sim <i><input type="checkbox" id="feito" name="feito"></i>
-          Não <i><input type="checkbox" id="feito" name="feito"></i></td>
-        </tr>
-        <tr>
-          <td><b>E.</b></td>
-          <td>Realizar todas as calibrações e verificações necessárias em todos os equipamentos
-            <a href="verificarEquipamento.html">(Como realizar?)</a>
-          </td>
-          <td>Realizado <i><input type="checkbox" id="feito" name="feito"></i>
-            <br>
-            Não realizado<i><input type="checkbox" id="feito" name="feito"></i></td>
-        </tr>
-      </table>
+              <table id="tabela_um" style="border-radius: 15px;" class="w3-table w3-striped w3-white">
+          <tr>
+            <td><b>A.</b></td>
+            <td> O(s) equipamento(s) possui(em) capacidade de obter resultados nas concentrações pretendidas? <a
+                href="verificarEquipamento.html">(Como verificar?)</a>
+            </td>
+            <td style="white-space: nowrap;">Sim <i><input type="radio" name="questaoA"></i>
+              Não <i><input type="radio" name="questaoA"></i></td>
+          </tr>
+          <tr>
+            <td><b>B.</b></td>
+            <td>O(s) equipamento(s) está(ão) adequado(s) para o tipo de matriz e analito que serão abordados? <a
+                href="verificarEquipamento.html">(Como verificar?)</a>
+            </td>
+            <td>Sim <i><input type="radio" name="questaoB"></i>
+              Não <i><input type="radio" name="questaoB"></i></td>
+          </tr>
+          <tr>
+            <td><b>C.</b></td>
+            <td>O(s) equipamento(s) possui(em) resolução adequada ao estudo pretendido? <a
+                href="verificarEquipamento.html">(Como verificar?)</a>
+            </td>
+            <td>Sim <i><input type="radio" name="questaoC"></i>
+              Não <i><input type="radio" name="questaoC"></i></td>
+          </tr>
+          <tr>
+            <td><b>D.</b></td>
+            <td>O(s) equipamento(s) precisa(m) de calibração ou verificação periódica? <a
+                href="verificarEquipamento.html">(Como verificar?)</a>
+            </td>
+            <td>Sim <i><input type="radio" name="questaoD"></i>
+              Não <i><input type="radio" name="questaoD"></i></td>
+          </tr>
+          <tr>
+            <td><b>E.</b></td>
+            <td>Realizaram-se calibrações e verificações periódicas nos equipamentos que necessitam desses
+              procedimentos? <a href="verificarEquipamento.html">(Como verificar?)</a>
+            </td>
+            <td>Sim <i><input type="radio" name="questaoE"></i>
+              Não <i><input type="radio" name="questaoE"></i></td>
+          </tr>
+          <tr>
+            <td><b>F.</b></td>
+            <td>Realizaram-se todas as calibrações e verificações necessárias em todos os equipamentos <a
+                href="verificarEquipamento.html">(Como realizar?)</a>
+            </td>
+            <td>Sim <i><input type="radio" name="questaoF"></i>
+              Não <i><input type="radio" name="questaoF"></i></td>
+          </tr>
+        </table>
+
+      </div>
       <table id="tabela_dois" style="border-radius: 15px;" class="w3-table w3-striped w3-white">
         <div class="AP2">
           <span><b>Qualificação de materiais</b></span>
         </div>
-        <td><b>F.</b></td>
-        <td>O(s) material(s) são adequados ao estudo? <a href="verificarMateriais.html">(Como verificar?)</a>
-        </td>
-        <td>Sim <input type="checkbox" id="feito" name="feito"></i>
-          Não <i><input type="checkbox" id="feito" name="feito"></i></td>
-        </tr>
         <tr>
           <td><b>G.</b></td>
-          <td>O(s) material(s) garantem rastreabilidade metrológica adequada e suficiente?<br>
-            É um material de referência ou de referência certificado?
-            <a href="verificarMateriais.html">(Como verificar?)</a></td>
-          <td>Sim <i><input type="checkbox" id="feito" name="feito"></i>
-            Não <i><input type="checkbox" id="feito" name="feito"></i>
-            <br>Sim <i><input type="checkbox" id="feito" name="feito"></i>
-            Não <i><input type="checkbox" id="feito" name="feito"></i></td>
+          <td>O(s) material(s) são adequados ao estudo? <a href="verificarMateriais.html">(Como verificar?)</a>
+          </td>
+          <td>Sim <input type="radio" name="questaoG">
+            Não <input type="radio" name="questaoG"></td>
+        </tr>
+        <tr>
+          <td><b>H.</b></td>
+          <td>O(s) material(s) garantem rastreabilidade metrológica adequada e suficiente?
+            <a href="verificarMateriais.html">(Como verificar?)</a>
+          </td>
+          <td>Sim <i><input type="radio" name="questaoH"></i>
+            Não <i><input type="radio" name="questaoH"></i></td>
+        </tr>
+        <tr>
+          <td><b>I.</b></td>
+          <td>Existem materiais de referência (MR) ou de referência certificados (MRC) disponíveis?
+            <a href="verificarMateriais.html">(Como verificar?)</a>
+          </td>
+          <td>Sim <i><input type="radio" name="questaoI"></i>
+            Não <i><input type="radio" name="questaoI"></i></td>
+        </tr>
+        <tr>
+          <td><b>J.</b></td>
+          <td>Existem padrões internos disponíveis?
+            <a href="verificarMateriais.html">(Como verificar?)</a>
+          </td>
+          <td>Sim <i><input type="radio" name="questaoJ"></i>
+            Não <i><input type="radio" name="questaoJ"></i></td>
         </tr>
       </table>
-  </div>
-  <br>
 
-  <div class="AP6" style="margin:2%;border-radius:15px;display:flex; justify-content:center; align-items:center;">
-    <b>Caso você prefira, imprima a tabela para realizar as verificações:</b><br>
-    <button id='btn_tabela' class="AP4">Imprimir Tabela</button>
-  </div>
-
-  <br>
-
-  <div class="w3-quarterD"><a href="escolhaProtocolo_Parcial.html">
-      <div class="w3-containerparametersC" style="border-radius: 15px;">
-        <div class="w3-clear">
-          <p>Próxima etapa:</p>
-          <h4><b>3. Escolha do protocolo mais adequado ao objetivo do método</b></h4>
-          <div><i class="fa fa-arrow-right w3-xxxlarge" style="margin: 15px;"></i></div>
+      <table id="tabela_dois" style="border-radius: 15px;" class="w3-table w3-striped w3-white">
+        <div class="AP2">
+          <span><b>Métodos de referência</b></span>
         </div>
-      </div>
-  </div></a>
-</div>
+        <tr>
+          <td><b></b></td>
+          <td><b>Se o método a ser desenvolvido possui limitações para rastreabilidade metrológica,
+              como não disponibilidade de materiais de referência ou padrões, talvez seja necessário utilizar
+              um método que identifique o mesmo analito para que seja possível uma comparação.
+              <br><br>Desta forma:</b>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><b>K.</b></td>
+          <td>Será utilizado um método de referência para comparar resultados?
+            <a href="verificarMateriais.html">(Como escolher?)</a>
+          </td>
+          <td>Sim <i><input type="radio" name="questaoK"></i>
+            Não <i><input type="radio" name="questaoK"></i></td>
+        </tr>
+      </table>
+
+    </div>
+  
+
+    <div class="AP6" 
+    style="margin:2%;border-radius:15px;display:flex; justify-content:center; align-items:center;margin-left: 100px;margin-right: 100px;">
+      <b>Caso você prefira, imprima a tabela para realizar as verificações:</b></div>
+
+      <button id='btn_tabela' class="AP6"
+      style="margin-left: 400px;margin-right: 300px;margin-bottom: 20px;border-radius: 10px;
+      text-align: center;font-weight: 600;">
+        Imprimir Tabela</button>
+    
+
+    <br>
+
+    <div class="w3-quarterD" style="margin-left: 300px;margin-right: 300px;"><a href="escolhaProtocolo_Parcial.html">
+        <div class="w3-containerparametersC" style="border-radius: 15px;">
+          <div class="w3-clear">
+            <p style="font-weight: 500;">Próxima etapa:</p>
+            <h4  style="font-family:'Montserrat', sans-serif;"><b>3. Escolha do protocolo mais adequado ao objetivo do método</b></h4>
+            <div><i class="fa fa-arrow-right w3-xxxlarge" style="margin: 15px;"></i></div>
+          </div>
+        </div>
+    </div></a>
+  </div>
 
 
 <br>
