@@ -80,21 +80,24 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
             }
 
             // Verificar o localStorage para definir a visibilidade dos elementos
-            if (localStorage.getItem("R") !== null) {
+            if ((localStorage.getItem("R") !== null) && (localStorage.getItem("R2") !== null)) {
                 document.getElementById("R").style.display = 'none';
                 document.getElementById("R_Display").style.display = 'block';
+                document.getElementById("R2").style.display = 'none';  // Adicionado para garantir que R2 esteja visível
                 document.getElementById("R2_Display").style.display = 'block';
                 document.getElementById("resultGrauCorrelacao").style.display = 'block';
                 document.getElementById('comentGrauCorrelacao').style.display = 'block';
-                document.getElementById('soluçãoGrauCorrelacao').style.display = 'block';
-                document.getElementById("btn-R").style.display = 'none';
-            } else {
+                document.getElementById('solucaoGrauCorrelacao').style.display = 'block';  // Corrigido ID
+                document.getElementById("btn-R").style.display = 'block';
+
+            } else if ((localStorage.getItem("R") === null) && (localStorage.getItem("R2") === null)) {
                 document.getElementById("R").style.display = 'block';
-                document.getElementById("R_Display").style.display = 'block';
-                document.getElementById("R2_Display").style.display = 'block';
+                document.getElementById("R2").style.display = 'block';  // Adicionado para garantir que R2 esteja visível
+                document.getElementById("R_Display").style.display = 'none';
+                document.getElementById("R2_Display").style.display = 'none';
                 document.getElementById("resultGrauCorrelacao").style.display = 'block';
                 document.getElementById('comentGrauCorrelacao').style.display = 'block';
-                document.getElementById('soluçãoGrauCorrelacao').style.display = 'block';
+                document.getElementById('solucaoGrauCorrelacao').style.display = 'block';  // Corrigido ID
                 document.getElementById("btn-R").style.display = 'block';
             }
 
@@ -522,27 +525,27 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
                         <label for="grauCorrelacao"><b>Grau de correlação entre as variáveis (r):</b></label><br>
                         <input type="number" id="R" name="R"
                             oninput="grauCorrelacao();carcterLinear();verificarDados();mostrarConclusao();mostrarInformacaoSalvaConclusão();">
-                        <p id="R_Display"></p>
+                        <p id="R_Display" style="display: none;"></p>
 
                         <label for="varResp"><b>Proporção de variabilidade nas respostas (r²):</b></label><br>
                         <input type="number" id="R2" name="R2"
                             oninput="grauCorrelacao();carcterLinear();verificarDados();mostrarConclusao();mostrarInformacaoSalvaConclusão();">
-                        <p id="R2_Display"></p>
+                        <p id="R2_Display" style="display: none;"></p>
 
-                        <button type="button" id="btn-R" class="btn_tabela"
-                            onclick="inputR(); carcterLinear();verificarDados();mostrarConclusao();mostrarInformacaoSalvaConclusão();">Salvar</button>
+                        <button type="button" id="btn-R" class="btn_tabela" onclick="ocultarInputs()">Salvar</button>
                         <button type="button" id="btn-R-clear" class="btn_tabela"
-                            onclick="limparInformacaoInputR();carcterLinear();verificarDados();mostrarConclusao();mostrarInformacaoSalvaConclusão();">Limpar
+                            onclick="limparInformacaoInputR();grauCorrelacao();carcterLinear();verificarDados();mostrarConclusao();mostrarInformacaoSalvaConclusão();">Limpar
                             campo</button>
+                    </td>
+                    <td>
+                        <span> Recomendação: <br>
+                            1,000 &gt; r &gt; 0.997 <br>
+                            1,000 &gt; r² &gt; 0.995 </span>
 
-                            <td>
-                                <span> Recomendação: <br>
-                                    1,000 &gt; r &gt; 0.995 <br>
-                                    1,000 &gt; r² &gt; 0.995 </span>
-                                    
-                                <br><br>
-                                <span> Critério próprio: <br>
-                                    *será colocado*</span>
+                        <br><br>
+                        <span> Critério próprio: <br>
+                            *será colocado*</span>
+                    </td>
                                     <!--
                                     <div style="white-space: nowrap;">
                                         <div style="display: block;">
