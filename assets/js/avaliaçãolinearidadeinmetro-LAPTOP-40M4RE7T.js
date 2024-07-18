@@ -172,42 +172,47 @@ function limparInformacaoInput() {
 
 /*Avaliação r e r2*/
 
+/*Avaliação r e r2*/
 function grauCorrelacao() {
-    var grauCorrelacao = (document.getElementById("R").value);
-    var varResp = (document.getElementById("R2").value);
+    var grauCorrelacao = parseFloat(document.getElementById("R").value);
+    var varResp = parseFloat(document.getElementById("R2").value);
     var resultGrauCorrelacao = document.getElementById("resultGrauCorrelacao");
     var comentGrauCorrelacao = document.getElementById('comentGrauCorrelacao');
-    var soluçãoGrauCorrelacao = document.getElementById('soluçãoGrauCorrelacao');
+    var solucaoGrauCorrelacao = document.getElementById('solucaoGrauCorrelacao');
+    var R_Display = document.getElementById('R_Display');
+    var R2_Display = document.getElementById('R2_Display');
 
-    if ((grauCorrelacao >= 0.995) && (grauCorrelacao <= 1)) {
+    if ((grauCorrelacao >= 0.997) && (grauCorrelacao <= 1) && (varResp >= 0.995) && (varResp <= 1)) {
         resultGrauCorrelacao.innerHTML = "APROVADO";
-        comentGrauCorrelacao.innerHTML = 'O grau de correlação (r) e determinação (r²) estão satisfatótios, portando o método é sensível as mudanças de concentração, ou seja, existe uma relação estatísticamente linear entre x e y, ou seja, entre a concentração e a resposta obtida pelo método.'
-        soluçãoGrauCorrelacao.innerHTML = '';
-
-    } else if ((grauCorrelacao < 0.995) || (grauCorrelacao > 1)) {
+        comentGrauCorrelacao.innerHTML = 'O grau de correlação (r) e determinação (r²) estão satisfatórios, portanto o método é sensível às mudanças de concentração, ou seja, existe uma relação estatisticamente linear entre x e y, ou seja, entre a concentração e a resposta obtida pelo método.';
+        solucaoGrauCorrelacao.innerHTML = '';
+    } else if ((grauCorrelacao < 0.997) || (grauCorrelacao > 1) || (varResp < 0.997) || (varResp > 1)) {
         resultGrauCorrelacao.innerHTML = "REPROVADO";
-        comentGrauCorrelacao.innerHTML = 'O grau de correlação (r) e determinação (r²) não estão satisfatótios, isso implica que o método não possui sensibilidade, ou seja, não existe uma relação estatísticamente linear entre x e y, ou seja, entre a concentração e a resposta obtida pelo método.'
-        soluçãoGrauCorrelacao.innerHTML = '(<a href="(soluçãoGrauCorrelacao.html)">Como solucionar</a>)';
-
-
+        comentGrauCorrelacao.innerHTML = 'O grau de correlação (r) e determinação (r²) não estão satisfatórios, isso implica que o método não possui sensibilidade, ou seja, não existe uma relação estatisticamente linear entre x e y, ou seja, entre a concentração e a resposta obtida pelo método.';
+        solucaoGrauCorrelacao.innerHTML = '(<a href="solucaoGrauCorrelacao.html">Como solucionar</a>)';
     } else {
         resultGrauCorrelacao.innerHTML = '';
-        comentGrauCorrelacao.innerHTML = ''
-        soluçãoGrauCorrelacao.innerHTML = '';
-
+        comentGrauCorrelacao.innerHTML = '';
+        solucaoGrauCorrelacao.innerHTML = '';
     }
 
     var R_Formatted = grauCorrelacao.toFixed(3);
-    // Exibindo o resultado formatado
-    grauCorrelacao_Display.textContent = R_Formatted;
-    grauCorrelacao_Display.value = R_Formatted;
+    var R2_Formatted = varResp.toFixed(3);
 
-    localStorage.setItem("R", grauCorrelacao.value);
-    localStorage.setItem("R2", varResp.innerHTML);
+    R_Display.textContent = R_Formatted;
+    R2_Display.textContent = R2_Formatted;
+
+    localStorage.setItem("R", grauCorrelacao);
+    localStorage.setItem("R2", varResp);
     localStorage.setItem("resultGrauCorrelacao", resultGrauCorrelacao.innerHTML);
     localStorage.setItem("comentGrauCorrelacao", comentGrauCorrelacao.innerHTML);
-    localStorage.setItem("soluçãoGrauCorrelacao", comentGrauCorrelacao.innerHTML);
+    localStorage.setItem("solucaoGrauCorrelacao", solucaoGrauCorrelacao.innerHTML);
+    localStorage.setItem("R_Display", R_Display.textContent);
+    localStorage.setItem("R2_Display", R2_Display.textContent);
 
+
+
+    mostrarInformacaoSalvaR();
 }
 
 /*
@@ -261,39 +266,6 @@ function grauCorrelacaoUsuario() {
     var criterioUsuarioMaxR2 = (document.getElementById("criterioUsuarioMaxR2").value);
 
 }*/
-
-function inputR() {
-    var grauCorrelacao = document.getElementById("R");
-    var R_Display = document.getElementById("R_Display");
-    var R = parseFloat(grauCorrelacao.value); // Convertendo para número
-
-    // Input R2
-    var varResp = document.getElementById("R2");
-    var R2_Display = document.getElementById("R2_Display");
-
-    R_Display.textContent = R;
-
-    // Calculando R ao quadrado
-    var R2 = R * R;
-
-    // Limitando o resultado a 4 números significativos
-    var R2Formatted = R2.toFixed(3);
-
-    // Exibindo o resultado formatado
-    R2_Display.textContent = R2Formatted;
-
-    localStorage.setItem("R", grauCorrelacao.value);
-    localStorage.setItem("R2", varResp.value);
-    localStorage.setItem("R_Display", R_Display.innerHTML);
-    localStorage.setItem("R2_Display", R2_Display.innerHTML);
-
-    document.getElementById("R").style.display = 'none';
-    document.getElementById("btn-R").style.display = 'none';
-    document.getElementById("conclusaoLinearidade").style.display = 'block';
-
-    mostrarInformacaoSalvaR();
-
-}
 
 /* function inputR_Usuario() {
 
@@ -381,15 +353,14 @@ function mostrarInformacaoSalvaR() {
         divresultcomentGrauCorrelacao.innerHTML = comentGrauCorrelacao;
     }
 
-    var soluçãoGrauCorrelacao = localStorage.getItem("soluçãoGrauCorrelacao");
-    var divresultsoluçãoGrauCorrelacao = document.getElementById("soluçãoGrauCorrelacao");
-    if (soluçãoGrauCorrelacao) {
-        divresultsoluçãoGrauCorrelacao.innerHTML = soluçãoGrauCorrelacao;
+    var solucaoGrauCorrelacao = localStorage.getItem("solucaoGrauCorrelacao");
+    var divresultsolucaoGrauCorrelacao = document.getElementById("solucaoGrauCorrelacao");
+    if (solucaoGrauCorrelacao) {
+        divresultsolucaoGrauCorrelacao.innerHTML = solucaoGrauCorrelacao;
     }
 
-
-    document.getElementById("R2").style.display = 'none';
-
+    // Decida aqui se você realmente quer esconder o campo R2
+    document.getElementById("R2").style.display = 'block';
 }
 
 /*
@@ -463,7 +434,8 @@ function limparInformacaoInputR() {
 
     // Mostrar os elementos novamente
     document.getElementById("R").style.display = 'block';
-    document.getElementById("R2").style.display = 'none';
+    document.getElementById("R2").style.display = 'block'; // Exibir R2 aqui
+    document.getElementById("R_Display").style.display = 'block';
     document.getElementById("R2_Display").style.display = 'block';
     document.getElementById("btn-R").style.display = 'block';
     document.getElementById("conclusaoLinearidade").style.display = 'none';
@@ -472,8 +444,19 @@ function limparInformacaoInputR() {
     verificarDados();
     mostrarConclusao();
     mostrarInformacaoSalvaConclusão();
+
+    
 }
 
+function ocultarInputs() {
+    // Esconde os campos de input
+    document.getElementById("R").style.display = 'none';
+    document.getElementById("R2").style.display = 'none';
+
+    // Exibe os elementos de display
+    document.getElementById("R_Display").style.display = 'block';
+    document.getElementById("R2_Display").style.display = 'block';
+}
 /*....*/
 
 /*....*/
