@@ -347,7 +347,7 @@ body {
 
 /* Logo */
 .header-area .main-nav .logo {
-  background-image: url('../images/logomenorvalince03Tutoriais.png');
+  background-image: url('assets/images/logomenorvalince03Tutoriais.png');
   width: 166px;
   height: 60px;
   display: inline-block;
@@ -443,7 +443,7 @@ Banner Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url(../images/um-fundo-azul-com-um-fundo-azul_881308-1160.avif);
+  background-image: url(assets/images/um-fundo-azul-com-um-fundo-azul_881308-1160.avif);
   background-color: #acd2ecec;
   padding: 140px 0px 70px 0px;
   position: relative;
