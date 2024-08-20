@@ -82,7 +82,7 @@ https://templatemo.com/tm-564-plot-listing
     </header>
     <!-- ***** Header Area End ***** -->
 
-    <div class="main-banner">
+       <div class="main-banner">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -92,51 +92,192 @@ https://templatemo.com/tm-564-plot-listing
                         </h2>
                     </div>
                 </div>
-                <div class="col-lg-12">
+            </div>
+        </div>
+    </div>
 
-                    <div class="row">
-                        <div class="AP4">
-                            Se há valores máximo e mínimo a serem encontrados, é
-                            necessário investigar uma faixa de valores que cubra tanto
-                            acima quanto abaixo dos valores-alvo. A amplitude, que é a
-                            diferença entre o primeiro e o último ponto de concentração
-                            da curva, é crucial ao definir o intervalo completo.
-                            <br>
-                            Para lidar com isso, é recomendável dividir essa faixa em
-                            várias curvas analíticas com amplitudes menores. Utilize
-                            curvas que variem de 50% a 200% dos valores-alvo, começando
-                            pelo ponto mínimo. Em seguida, construa outra curva partindo
-                            do último ponto da curva anterior, considerando que o
-                            primeiro ponto será a concentração de 200%.
-                            <br><b>Exemplo:</b> A faixa estabelecida para que um produto contendo determinado pesticida
-                            possa ser comercializado deve estar entre 2 mg/L e 80 mg/L.
-                            <div>
-                            <br>
-                            <img src="assets/images/exemploFaixa01.png" style="width: 50%;margin:15px">
+    <div style="background-color: rgb(2, 33, 59);text-align: center;">
+        <div style="width: 100%; text-align: center; padding: 20px;">
 
-                            <br>
-                            <img src="assets/images/exemploFaixa02.png" style="width: 50%;margin:15px">
-
-                            <br>
-                            <img src="assets/images/exemploFaixa03.png" style="width: 50%;margin:15px">
-
-                            <br>
-                            <img src="assets/images/exemploFaixa04.png" style="width: 50%;margin:15px">
-
-                            </div>
-                            <br>
-                        </div>
-                    </div>
-                </div>
+            <div class="AP4" style="margin:5px">
+                Se há valores máximo e mínimo a serem encontrados, é
+                necessário investigar uma faixa de valores que cubra tanto
+                acima quanto abaixo dos valores-alvo.
+            </div>
+            <div class="AP4" style="margin:5px">
+                A amplitude, que é a
+                diferença entre o primeiro e o último ponto de concentração
+                da curva, é crucial ao definir o intervalo completo.
+            </div>
+            <div class="AP4" style="margin:5px">
+                Para lidar com isso, é recomendável dividir essa faixa em
+                várias curvas analíticas com amplitudes menores. Utilize
+                curvas que variem de 50% a 200% dos valores-alvo, começando
+                pelo ponto mínimo. Em seguida, construa outra curva partindo
+                do último ponto da curva anterior, considerando que o
+                primeiro ponto será a concentração de 200%.
             </div>
 
         </div>
 
+        <div>
+            <div class="AP4" style="width: 90%; text-align: center; padding: 20px;">
+                <br><b>Exemplo:</b> A faixa estabelecida para que um produto contendo determinado
+                pesticida possa ser comercializado deve estar <br>entre 2 mg/L e 80 mg/L.
 
 
+                <section>
+                    <br>
+                    <div>
+                        <table class="centered-table">
+                            <thead>
+                                <tr>
+                                    <th>Pontos</th>
+                                    <th>% do valor alvo</th>
+                                    <th>Concentração</th>
+                                    <th>Unidade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>50</td>
+                                    <td>1,00</td>
+                                    <td>mg/L</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>80</td>
+                                    <td>1,60</td>
+                                    <td>mg/L</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>100% valor alvo mínimo</td>
+                                    <td>2,00</td>
+                                    <td>mg/L</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>120</td>
+                                    <td>2,40</td>
+                                    <td>mg/L</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>200</td>
+                                    <td>4,00</td>
+                                    <td>mg/L</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <div>
+                        <table class="centered-table">
+                            <thead>
+                                <tr>
+                                    <th>Pontos</th>
+                                    <th>% do valor alvo</th>
+                                    <th>Concentração</th>
+                                    <th>Unidade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>50</td>
+                                    <td>4,00</td>
+                                    <td>mg/L</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>80</td>
+                                    <td>6,40</td>
+                                    <td>mg/L</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>100% (valor alvo nessa curva)</td>
+                                    <td>8,00</td>
+                                    <td>mg/L</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>120</td>
+                                    <td>9,60</td>
+                                    <td>mg/L</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>200</td>
+                                    <td>16,00</td>
+                                    <td>mg/L</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <div>
+                            <table class="centered-table">
+                                <thead>
+                                    <tr>
+                                        <th>Pontos</th>
+                                        <th>% do valor alvo</th>
+                                        <th>Concentração</th>
+                                        <th>Unidade</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>25</td>
+                                        <td>20,00</td>
+                                        <td>mg/L</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>50</td>
+                                        <td>40,00</td>
+                                        <td>mg/L</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>80</td>
+                                        <td>64,00</td>
+                                        <td>mg/L</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>100% Valor alvo máximo</td>
+                                        <td>80,00</td>
+                                        <td>mg/L</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>120</td>
+                                        <td>96,00</td>
+                                        <td>mg/L</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>150</td>
+                                        <td>120,00</td>
+                                        <td>mg/L</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>200</td>
+                                        <td>160,00</td>
+                                        <td>mg/L</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                </section>
+            </div>
+        </div>
     </div>
-
-
+    </div>
     <div class="popular-categories">
         <div class="container">
             <div class="row">
